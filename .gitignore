@@ -1,0 +1,8 @@
+.obsidian/
+
+raw/*.pdf
+raw/*.pptx
+raw/*.docx
+
+.DS_Store
+Thumbs.db
