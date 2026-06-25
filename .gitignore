@@ -1,4 +1,6 @@
 .obsidian/
+.claude/
+.claudian/
 
 raw/*.pdf
 raw/*.pptx
