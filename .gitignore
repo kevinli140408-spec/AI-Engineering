@@ -5,6 +5,7 @@
 raw/*.pdf
 raw/*.pptx
 raw/*.docx
+raw/assets/
 
 .DS_Store
 Thumbs.db
