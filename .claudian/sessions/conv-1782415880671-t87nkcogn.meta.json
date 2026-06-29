@@ -4,21 +4,21 @@
   "title": "Verify LLM Wiki connection",
   "titleGenerationStatus": "success",
   "createdAt": 1782415880677,
-  "updatedAt": 1782416020885,
-  "lastResponseAt": 1782416020885,
+  "updatedAt": 1782759853266,
+  "lastResponseAt": 1782759853266,
   "sessionId": "2a11eeb7-41cf-4e75-b0fd-fe371e43a9a7",
   "providerState": {
     "providerSessionId": "2a11eeb7-41cf-4e75-b0fd-fe371e43a9a7"
   },
   "currentNote": "Bienvenido.md",
   "usage": {
-    "model": "haiku",
-    "inputTokens": 8,
-    "cacheCreationInputTokens": 1411,
-    "cacheReadInputTokens": 23075,
-    "contextWindow": 200000,
-    "contextTokens": 24494,
-    "percentage": 12,
+    "model": "sonnet",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 1815,
+    "cacheReadInputTokens": 55575,
+    "contextWindow": 1000000,
+    "contextTokens": 57391,
+    "percentage": 6,
     "contextWindowIsAuthoritative": true
   }
 }
