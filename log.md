@@ -42,6 +42,12 @@ Páginas creadas: [[fuentes/relaciones-logicas-mm]], [[fuentes/razonamientos-mm]
 Páginas actualizadas: [[conceptos/logica]], [[conceptos/logica-proposicional]], index.md
 Archivos fuente movidos a raw/assets/.
 
+## [2026-06-30] ingesta | Curso Fundamentos de Informática / Algoritmia (UADE) — 11 fuentes
+Ingesta batch de 11 archivos PDF del curso de Algoritmia (UADE): pensamiento computacional, algoritmos, lenguajes de programación, Python, variables, estructuras de control (secuencial/condicional/iterativa), funciones, cadenas de caracteres, listas, y algoritmos de búsqueda/ordenamiento. Incluye una guía de estudio integral de 48 páginas. Se crearon 11 fuentes, 12 conceptos, 2 entidades y 1 análisis de síntesis.
+Páginas creadas: [[fuentes/pensamiento-computacional-mm]], [[fuentes/algoritmos-secuenciales-mm]], [[fuentes/control-flujo-ciclos-mm]], [[fuentes/funciones-existentes-mm]], [[fuentes/resumen-clase5-mm]], [[fuentes/cadenas-caracteres-mm]], [[fuentes/taller-listas-mm]], [[fuentes/funciones-listas-mm]], [[fuentes/listas-python-mm]], [[fuentes/orden-busqueda-mm]], [[fuentes/guia-estudio-algoritmia-mm]], [[conceptos/pensamiento-computacional]], [[conceptos/algoritmo]], [[conceptos/lenguajes-de-programacion]], [[conceptos/variable-programacion]], [[conceptos/estructura-secuencial]], [[conceptos/estructura-condicional]], [[conceptos/estructura-iterativa]], [[conceptos/funciones-programacion]], [[conceptos/cadenas-de-caracteres]], [[conceptos/listas-python]], [[conceptos/algoritmos-busqueda]], [[conceptos/algoritmos-ordenamiento]], [[entidades/python]], [[entidades/guido-van-rossum]], [[analisis/estructura-curso-algoritmia-uade]]
+Páginas actualizadas: [[entidades/uade]], index.md
+Archivos fuente movidos a raw/assets/.
+
 ## [2026-06-29] ingesta | Curso Elementos de Álgebra y Geometría (UADE) — 8 presentaciones
 Ingesta batch de 8 archivos PPTX del curso de Álgebra y Geometría de UADE. Se crearon 8 páginas de fuentes, 8 de conceptos, 1 entidad y 1 análisis de síntesis.
 Páginas creadas: [[fuentes/numeros-reales-uade]], [[fuentes/complejos-uade]], [[fuentes/polinomios-uade]], [[fuentes/vectores-uade]], [[fuentes/rectas-uade]], [[fuentes/planos-uade]], [[fuentes/conicas-uade]], [[fuentes/superficies-uade]], [[entidades/uade]], [[conceptos/numeros-reales]], [[conceptos/numeros-complejos]], [[conceptos/polinomios]], [[conceptos/vectores]], [[conceptos/rectas]], [[conceptos/planos]], [[conceptos/conicas]], [[conceptos/superficies-cuadricas]], [[analisis/estructura-curso-algebra-geometria-uade]], index.md

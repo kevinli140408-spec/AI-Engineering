@@ -21,10 +21,23 @@
 - [[fuentes/argumentacion-inductiva-mm]] — Argumentación inductiva: enumeración, analogía, estadística (2026-06-29)
 - [[fuentes/falacias-materiales-mm]] — Falacias materiales: de atinencia, de ambigüedad y otras (2026-06-29)
 - [[fuentes/textos-argumentativos-mm]] — Textos argumentativos: secuencia, argumentos y refutación (2026-06-29)
+- [[fuentes/pensamiento-computacional-mm]] — Clase 1: pensamiento computacional, problema-algoritmo-programa, lenguajes (2026-06-30)
+- [[fuentes/algoritmos-secuenciales-mm]] — Clase 2: variables, tipos de datos, estructura secuencial (2026-06-30)
+- [[fuentes/control-flujo-ciclos-mm]] — Control de flujo: contadores, acumuladores, banderas, while/for (2026-06-30)
+- [[fuentes/funciones-existentes-mm]] — Clase 4: programación modular y módulos random/math/time (2026-06-30)
+- [[fuentes/resumen-clase5-mm]] — Clase 5: casos de prueba, prueba de escritorio, depuración (2026-06-30)
+- [[fuentes/cadenas-caracteres-mm]] — Cadenas de caracteres: operadores, métodos, f-strings (2026-06-30)
+- [[fuentes/taller-listas-mm]] — Taller: listas, operaciones básicas, búsqueda secuencial (2026-06-30)
+- [[fuentes/funciones-listas-mm]] — Clase 6: funciones que generan y modifican listas (2026-06-30)
+- [[fuentes/listas-python-mm]] — Listas en Python: slicing, métodos, ejercicios por niveles (2026-06-30)
+- [[fuentes/orden-busqueda-mm]] — Métodos de ordenamiento (selección, burbujeo, inserción) y búsqueda (2026-06-30)
+- [[fuentes/guia-estudio-algoritmia-mm]] — Guía de estudio integral de Algoritmia, 48 páginas (2026-06-30)
 
 ## Entidades
 - [[entidades/obsidian]] — Editor de notas markdown con enlaces bidireccionales
 - [[entidades/uade]] — Universidad Argentina de la Empresa
+- [[entidades/python]] — Lenguaje de programación interpretado, alto nivel, multiparadigma
+- [[entidades/guido-van-rossum]] — Creador del lenguaje Python
 
 ## Conceptos
 - [[conceptos/retrieval-augmented-generation]] — Arquitectura que combina LLMs con recuperación de documentos externos
@@ -54,7 +67,20 @@
 - [[conceptos/argumentacion-inductiva]] — Razonamientos probabilísticos: enumeración, analogía, estadística
 - [[conceptos/falacias]] — Argumentos aparentemente correctos pero inválidos o engañosos
 - [[conceptos/texto-argumentativo]] — Estructura: tema, problema, hipótesis, argumentación, refutación, conclusión
+- [[conceptos/pensamiento-computacional]] — Analizar problemas y diseñar soluciones sin necesidad de computadora
+- [[conceptos/algoritmo]] — Secuencia finita, repetible y correcta de pasos; pseudocódigo y diagramas
+- [[conceptos/lenguajes-de-programacion]] — Niveles (máquina/bajo/alto), compilados vs interpretados, paradigmas
+- [[conceptos/variable-programacion]] — Nombre, tipo de dato y dirección de memoria; tipos int/float/str/bool
+- [[conceptos/estructura-secuencial]] — Acciones ejecutadas una tras otra, de arriba hacia abajo
+- [[conceptos/estructura-condicional]] — if/elif/else; operadores relacionales y lógicos (and/or)
+- [[conceptos/estructura-iterativa]] — Ciclos while/for; contadores, acumuladores, ciclos infinitos
+- [[conceptos/funciones-programacion]] — Programación modular; parámetros, return, módulos random/math/time
+- [[conceptos/cadenas-de-caracteres]] — Strings: operadores, métodos, f-strings
+- [[conceptos/listas-python]] — Estructura de datos ordenada y mutable; slicing, métodos, recorrido
+- [[conceptos/algoritmos-busqueda]] — Búsqueda secuencial y binaria sobre listas
+- [[conceptos/algoritmos-ordenamiento]] — Selección, burbujeo e inserción
 
 ## Análisis
 - [[analisis/estructura-curso-algebra-geometria-uade]] — Síntesis y mapa del curso de Álgebra y Geometría (UADE)
 - [[analisis/estructura-curso-pensamiento-critico-uade]] — Síntesis y mapa del curso de Pensamiento Crítico y Comunicación (UADE)
+- [[analisis/estructura-curso-algoritmia-uade]] — Síntesis y mapa del curso de Fundamentos de Informática / Algoritmia (UADE)
