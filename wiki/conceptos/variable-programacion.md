@@ -4,7 +4,7 @@ tipo: concepto
 creado: 2026-06-30
 actualizado: 2026-06-30
 tags: [variables, tipos-de-datos, python]
-fuentes: [algoritmos-secuenciales-mm, guia-estudio-algoritmia-mm]
+fuentes: [algoritmos-secuenciales-mm, guia-estudio-algoritmia-mm, joyanes-aguilar-fundamentos-de-programacion]
 ---
 
 # Variable (Programación)
@@ -53,8 +53,13 @@ Conversión de tipos: `int()`, `float()`, `str()`.
 ## Comentarios
 Líneas no procesadas por el intérprete, usadas como documentación. En Python: `# comentario`.
 
+## Equivalente en pseudocódigo algorítmico
+En notación independiente del lenguaje (Joyanes Aguilar), los tipos básicos son **entero**, **real**, **lógico** y **carácter/cadena**, declarados explícitamente (`var entero: Edad`) a diferencia del tipado dinámico de Python. Tablas de operadores, precedencia y funciones internas en [[conceptos/operadores-y-expresiones]].
+
 ## Referencias
 
 - [[fuentes/algoritmos-secuenciales-mm]]
 - [[fuentes/guia-estudio-algoritmia-mm]]
+- [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
 - [[entidades/python]]
+- [[conceptos/operadores-y-expresiones]]

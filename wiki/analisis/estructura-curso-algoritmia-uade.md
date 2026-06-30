@@ -55,7 +55,7 @@ El curso avanza de lo abstracto a lo concreto:
 - **Evaluación escrita** (primer parcial): se trabaja con lápiz y papel, pseudocódigo y diagramas de flujo (Flowgorithm) antes de traducir a código.
 
 ## Bibliografía principal
-- Joyanes Aguilar, Luis. *Fundamentos de Programación*. McGraw-Hill.
+- Joyanes Aguilar, Luis. *Fundamentos de Programación*. McGraw-Hill. Ingesta en curso en [[fuentes/joyanes-aguilar-fundamentos-de-programacion]].
 - Marzal Varó, A.; García Luengo, I.; García Sevilla, P. *Introducción práctica a la programación con Python 3*. I'Une.
 
 ## Referencias

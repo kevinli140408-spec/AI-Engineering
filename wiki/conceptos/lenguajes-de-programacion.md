@@ -4,7 +4,7 @@ tipo: concepto
 creado: 2026-06-30
 actualizado: 2026-06-30
 tags: [lenguajes-de-programacion, compiladores, paradigmas]
-fuentes: [pensamiento-computacional-mm, guia-estudio-algoritmia-mm]
+fuentes: [pensamiento-computacional-mm, guia-estudio-algoritmia-mm, joyanes-aguilar-fundamentos-de-programacion]
 ---
 
 # Lenguajes de Programación
@@ -34,6 +34,16 @@ Conjunto de palabras, símbolos y reglas sintácticas mediante los cuales se ind
 | Velocidad | Más lenta | Más rápida | Muy rápida |
 | Ejemplo | Python, JavaScript | C, Pascal | Assembly |
 
+## Generaciones de lenguajes
+1. **Lenguaje máquina**: código binario puro, el único que entiende el procesador directamente.
+2. **Ensamblador (bajo nivel)**: mnemónicos que representan instrucciones máquina (p. ej. `MOV R5, R6`); requiere un programa **ensamblador** para traducirlo.
+3. **Alto nivel**: independiente de la máquina, más cercano al lenguaje humano (FORTRAN, COBOL, Pascal, C, Java...).
+
+## Proceso de compilación
+`programa fuente → compilador → programa objeto → enlazador (linker) → programa ejecutable`
+
+El programa ejecutable resultante ya no necesita el compilador para correr; solo se vuelve a compilar si cambia el código fuente. Un **intérprete**, en cambio, no genera programa objeto: traduce y ejecuta instrucción por instrucción en cada corrida (por eso es más lento, pero no requiere paso de compilación previo).
+
 ## Paradigmas de programación
 
 | Paradigma | Características | Lenguajes |
@@ -43,11 +53,14 @@ Conjunto de palabras, símbolos y reglas sintácticas mediante los cuales se ind
 | Orientado a objetos | Clases y objetos, encapsulamiento | Java, C++, C# |
 | Funcional | Funciones matemáticas puras, sin estado mutable | Lisp, Haskell |
 
-Python es **multiparadigma**: soporta imperativo, orientado a objetos y funcional.
+Python es **multiparadigma**: soporta imperativo, orientado a objetos y funcional. Detalle ampliado (definiciones, origen en TAD, línea histórica 1954-2000) en [[conceptos/paradigmas-de-programacion]].
 
 ## Referencias
 
 - [[fuentes/pensamiento-computacional-mm]]
 - [[fuentes/guia-estudio-algoritmia-mm]]
+- [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
 - [[entidades/python]]
 - [[conceptos/algoritmo]]
+- [[conceptos/paradigmas-de-programacion]]
+- [[conceptos/organizacion-de-computadoras]]

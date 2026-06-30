@@ -32,6 +32,7 @@
 - [[fuentes/listas-python-mm]] — Listas en Python: slicing, métodos, ejercicios por niveles (2026-06-30)
 - [[fuentes/orden-busqueda-mm]] — Métodos de ordenamiento (selección, burbujeo, inserción) y búsqueda (2026-06-30)
 - [[fuentes/guia-estudio-algoritmia-mm]] — Guía de estudio integral de Algoritmia, 48 páginas (2026-06-30)
+- [[fuentes/joyanes-aguilar-fundamentos-de-programacion]] — Libro de texto Fundamentos de Programación, 802 págs., ingesta capítulo por capítulo en curso (2026-06-30)
 
 ## Entidades
 - [[entidades/obsidian]] — Editor de notas markdown con enlaces bidireccionales
@@ -80,6 +81,13 @@
 - [[conceptos/listas-python]] — Estructura de datos ordenada y mutable; slicing, métodos, recorrido
 - [[conceptos/algoritmos-busqueda]] — Búsqueda secuencial y binaria sobre listas
 - [[conceptos/algoritmos-ordenamiento]] — Selección, burbujeo e inserción
+- [[conceptos/paradigmas-de-programacion]] — Imperativo, declarativo, orientado a objetos, funcional; línea histórica de lenguajes
+- [[conceptos/organizacion-de-computadoras]] — Arquitectura Von Neumann, UCP, memoria, almacenamiento, sistema operativo
+- [[conceptos/representacion-de-la-informacion]] — Bits, sistemas de numeración, ASCII/Unicode, codificación de datos
+- [[conceptos/redes-y-web]] — LAN/WAN, cliente-servidor, P2P, Internet, Web 2.0
+- [[conceptos/metodologia-de-la-programacion]] — Fases de resolución de problemas, diseño descendente, programación modular y estructurada
+- [[conceptos/programacion-orientada-a-objetos]] — Objetos, clases, abstracción, encapsulamiento, herencia, polimorfismo
+- [[conceptos/operadores-y-expresiones]] — Tipos de datos, operadores aritméticos/relacionales/lógicos, precedencia, funciones internas
 
 ## Análisis
 - [[analisis/estructura-curso-algebra-geometria-uade]] — Síntesis y mapa del curso de Álgebra y Geometría (UADE)
