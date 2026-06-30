@@ -18,7 +18,7 @@ Conjunto de palabras, símbolos y reglas sintácticas mediante los cuales se ind
 | **Máquina** | Código binario (0 y 1); el único que entiende directamente el procesador | `10110000 01100001` |
 | **Bajo nivel** | Representación simbólica del lenguaje máquina (mnemónicos) | Ensamblador (MOV, ADD, JMP) |
 | **Medio nivel** | Cercano al hardware (punteros, memoria) y al humano | C |
-| **Alto nivel** | Cercano al humano, estructurado, portable | [[entidades/python\|Python]] |
+| **Alto nivel** | Cercano al humano, estructurado, portable | [[entidades/python|Python]] |
 
 ## Programa fuente → ejecutable
 

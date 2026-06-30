@@ -51,3 +51,16 @@ Archivos fuente movidos a raw/assets/.
 ## [2026-06-29] ingesta | Curso Elementos de Álgebra y Geometría (UADE) — 8 presentaciones
 Ingesta batch de 8 archivos PPTX del curso de Álgebra y Geometría de UADE. Se crearon 8 páginas de fuentes, 8 de conceptos, 1 entidad y 1 análisis de síntesis.
 Páginas creadas: [[fuentes/numeros-reales-uade]], [[fuentes/complejos-uade]], [[fuentes/polinomios-uade]], [[fuentes/vectores-uade]], [[fuentes/rectas-uade]], [[fuentes/planos-uade]], [[fuentes/conicas-uade]], [[fuentes/superficies-uade]], [[entidades/uade]], [[conceptos/numeros-reales]], [[conceptos/numeros-complejos]], [[conceptos/polinomios]], [[conceptos/vectores]], [[conceptos/rectas]], [[conceptos/planos]], [[conceptos/conicas]], [[conceptos/superficies-cuadricas]], [[analisis/estructura-curso-algebra-geometria-uade]], index.md
+
+## [2026-06-30] lint | Migración de schema y corrección de frontmatter duplicado
+Se migraron 3 páginas con schema antiguo (`source`/`created`/`aliases`) al schema vigente (`titulo`/`tipo`/`creado`/`actualizado`/`tags`/`fuentes`): [[conceptos/clasificacion-proposiciones]], [[conceptos/tabla-de-verdad]], [[fuentes/tablas-de-verdad-mm]]. Se corrigió la clave `actualizado` duplicada (error de parseo YAML) en [[entidades/uade]], [[conceptos/logica]] y [[conceptos/logica-proposicional]], conservando la fecha más reciente.
+Páginas actualizadas: [[conceptos/clasificacion-proposiciones]], [[conceptos/tabla-de-verdad]], [[fuentes/tablas-de-verdad-mm]], [[entidades/uade]], [[conceptos/logica]], [[conceptos/logica-proposicional]]
+
+## [2026-06-30] lint | Mantenimiento de wiki: enlaces rotos
+Sweep completo (76 páginas escaneadas). Se corrigieron enlaces wiki rotos por error de tipeo: (1) [[conceptos/estructura-iterativa]] referenciaba `fuentes/clase-control-flujo-ciclos-mm` (en frontmatter `fuentes:` y en cuerpo) en vez de `fuentes/control-flujo-ciclos-mm`. (2) [[conceptos/razonamiento]], [[conceptos/lenguajes-de-programacion]] y [[conceptos/pensamiento-computacional]] tenían enlaces con pipe escapado incorrectamente (`\|` en vez de `|`), lo que rompía la resolución del enlace en Obsidian. No se encontraron contradicciones entre páginas ni duplicados. index.md verificado como completo. Hallazgos sin acción automática (requieren confirmación): [[entidades/obsidian]] es una página huérfana (sin enlaces entrantes); "chunking" se menciona en [[conceptos/retrieval-augmented-generation]] como `[[conceptos/chunking]]` pero no existe esa página.
+Páginas actualizadas: [[conceptos/estructura-iterativa]], [[conceptos/razonamiento]], [[conceptos/lenguajes-de-programacion]], [[conceptos/pensamiento-computacional]]
+
+## [2026-06-30] lint | Creación de página faltante: Chunking
+Siguiendo al hallazgo del lint anterior, se creó la página de concepto faltante "Chunking" (mencionada en [[conceptos/retrieval-augmented-generation]] pero sin página propia), confirmada por el usuario. Página huérfana [[entidades/obsidian]] se deja sin cambios por decisión del usuario.
+Páginas creadas: [[conceptos/chunking]]
+Páginas actualizadas: index.md

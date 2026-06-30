@@ -5,7 +5,6 @@ creado: 2026-06-29
 actualizado: 2026-06-29
 tags: [logica, simbolizacion, conectivas]
 fuentes: [simbolizacion-proposiciones-mm, tablas-de-verdad-mm, relaciones-logicas-mm, metodo-demostrativo-mm]
-actualizado: 2026-06-29
 ---
 
 # Lógica Proposicional

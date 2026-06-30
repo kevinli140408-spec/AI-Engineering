@@ -2,7 +2,7 @@
 titulo: "Razonamiento"
 tipo: concepto
 creado: 2026-06-29
-actualizado: 2026-06-29
+actualizado: 2026-06-30
 tags: [logica, razonamiento, argumentacion]
 fuentes: [razonamientos-mm]
 ---
@@ -21,10 +21,10 @@ Conjunto de [[conceptos/proposicion|proposiciones]] donde unas (**premisas**) pr
 
 | Tipo | Apoyo | Disciplina |
 |------|-------|-----------|
-| **Deductivos** (válidos) | Garantizan la verdad de la conclusión | [[conceptos/logica-proposicional\|Lógica formal]] |
-| **Inductivos** | Hacen probable la verdad | [[conceptos/argumentacion-inductiva\|Lógica informal]] |
-| **[[conceptos/falacias\|Falacias]]** formales | Parecen válidos pero no lo son | Lógica formal |
-| **[[conceptos/falacias\|Falacias]]** materiales | Persuasivos pero incorrectos | Lógica informal |
+| **Deductivos** (válidos) | Garantizan la verdad de la conclusión | [[conceptos/logica-proposicional|Lógica formal]] |
+| **Inductivos** | Hacen probable la verdad | [[conceptos/argumentacion-inductiva|Lógica informal]] |
+| **[[conceptos/falacias|Falacias]]** formales | Parecen válidos pero no lo son | Lógica formal |
+| **[[conceptos/falacias|Falacias]]** materiales | Persuasivos pero incorrectos | Lógica informal |
 
 ## Simbolización
 

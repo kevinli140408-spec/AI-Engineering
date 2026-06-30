@@ -16,7 +16,7 @@ Forma de **analizar problemas y diseñar soluciones de manera estructurada**, ut
 | Etapa | Pregunta clave |
 |-------|---------------|
 | **Problema** | ¿Qué se quiere resolver? |
-| **[[conceptos/algoritmo\|Algoritmo]]** | ¿Cómo se resuelve? (diseño de la solución) |
+| **[[conceptos/algoritmo|Algoritmo]]** | ¿Cómo se resuelve? (diseño de la solución) |
 | **Programa** | ¿Cómo se escribe en un lenguaje de programación? |
 
 ## Análisis del problema (entender el problema)

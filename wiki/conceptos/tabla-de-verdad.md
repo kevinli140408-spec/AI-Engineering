@@ -1,9 +1,10 @@
 ---
+titulo: "Tabla de Verdad"
 tipo: concepto
+creado: 2026-06-29
+actualizado: 2026-06-30
 tags: [logica, tablas-de-verdad, conectivas]
-source: raw/3. Tablas de verdad.pptx
-created: 2026-06-29
-aliases: [tablas de verdad]
+fuentes: [tablas-de-verdad-mm]
 ---
 
 # Tabla de Verdad

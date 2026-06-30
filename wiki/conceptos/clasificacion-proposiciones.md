@@ -1,9 +1,10 @@
 ---
+titulo: "Clasificación de Proposiciones"
 tipo: concepto
+creado: 2026-06-29
+actualizado: 2026-06-30
 tags: [logica, tautologia, contradiccion, contingencia]
-source: raw/3. Tablas de verdad.pptx
-created: 2026-06-29
-aliases: [clasificacion de proposiciones, tautologia, contradiccion, contingencia]
+fuentes: [tablas-de-verdad-mm]
 ---
 
 # Clasificación de Proposiciones

@@ -2,10 +2,9 @@
 titulo: "UADE (Universidad Argentina de la Empresa)"
 tipo: entidad
 creado: 2026-06-29
-actualizado: 2026-06-29
+actualizado: 2026-06-30
 tags: [universidad, argentina, educacion]
 fuentes: [numeros-reales-uade, complejos-uade, polinomios-uade, vectores-uade, rectas-uade, planos-uade, conicas-uade, superficies-uade, guia-estudio-algoritmia-mm]
-actualizado: 2026-06-30
 ---
 
 # UADE

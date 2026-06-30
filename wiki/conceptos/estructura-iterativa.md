@@ -4,7 +4,7 @@ tipo: concepto
 creado: 2026-06-30
 actualizado: 2026-06-30
 tags: [estructuras-de-control, ciclos, while, for, python]
-fuentes: [clase-control-flujo-ciclos-mm, guia-estudio-algoritmia-mm]
+fuentes: [control-flujo-ciclos-mm, guia-estudio-algoritmia-mm]
 ---
 
 # Estructura de Control Iterativa
@@ -79,7 +79,7 @@ while x > 0:
 
 ## Referencias
 
-- [[fuentes/clase-control-flujo-ciclos-mm]]
+- [[fuentes/control-flujo-ciclos-mm]]
 - [[fuentes/guia-estudio-algoritmia-mm]]
 - [[conceptos/estructura-condicional]]
 - [[conceptos/listas-python]]

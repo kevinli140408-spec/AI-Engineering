@@ -41,6 +41,7 @@
 
 ## Conceptos
 - [[conceptos/retrieval-augmented-generation]] — Arquitectura que combina LLMs con recuperación de documentos externos
+- [[conceptos/chunking]] — Fragmentación de documentos en chunks antes de generar embeddings
 - [[conceptos/embeddings]] — Representaciones vectoriales de texto que habilitan búsqueda semántica
 - [[conceptos/base-de-datos-vectorial]] — Almacén de embeddings con búsqueda eficiente por similitud
 - [[conceptos/graph-rag]] — Variante de RAG de Microsoft que usa grafos de conocimiento para razonamiento multi-salto

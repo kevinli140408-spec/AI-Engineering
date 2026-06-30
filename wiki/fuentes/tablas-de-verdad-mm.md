@@ -1,14 +1,16 @@
 ---
+titulo: "Tablas de Verdad — Pensamiento Crítico y Comunicación"
 tipo: fuente
+creado: 2026-06-29
+actualizado: 2026-06-30
 tags: [logica, tablas-de-verdad, conectivas, proposiciones]
-source: raw/3. Tablas de verdad.pptx
-created: 2026-06-29
-aliases: []
 ---
 
 # Tablas de Verdad — Pensamiento Crítico y Comunicación
 
 Presentación 3 del módulo de Lógica (materia Pensamiento Crítico y Comunicación, [[entidades/uade|UADE]]). Introduce las tablas de verdad como herramienta central de la [[conceptos/logica-proposicional]].
+
+Archivo fuente: `raw/3. Tablas de verdad.pptx`
 
 ## Summary
 

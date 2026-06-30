@@ -5,7 +5,6 @@ creado: 2026-06-29
 actualizado: 2026-06-29
 tags: [logica, filosofia, razonamiento]
 fuentes: [logica-mm, razonamientos-mm]
-actualizado: 2026-06-29
 ---
 
 # Lógica
