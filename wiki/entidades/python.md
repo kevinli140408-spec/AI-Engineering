@@ -4,6 +4,7 @@ tipo: entidad
 creado: 2026-06-30
 actualizado: 2026-06-30
 tags: [python, lenguaje-de-programacion, herramienta]
+fuentes: [guia-estudio-algoritmia-mm, pensamiento-computacional-mm]
 ---
 
 # Python (lenguaje)

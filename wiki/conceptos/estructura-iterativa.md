@@ -4,7 +4,7 @@ tipo: concepto
 creado: 2026-06-30
 actualizado: 2026-06-30
 tags: [estructuras-de-control, ciclos, while, for, python]
-fuentes: [control-flujo-ciclos-mm, guia-estudio-algoritmia-mm]
+fuentes: [control-flujo-ciclos-mm, guia-estudio-algoritmia-mm, joyanes-aguilar-fundamentos-de-programacion]
 ---
 
 # Estructura de Control Iterativa
@@ -77,9 +77,37 @@ while x > 0:
 | Se recorre una secuencia (`range`, lista, string) | La repetición depende de una condición |
 | El control es automático | Se necesita control manual |
 
+## Variantes en pseudocódigo algorítmico (Joyanes Aguilar)
+
+Joyanes formaliza **cuatro** estructuras repetitivas, dos controladas por entrada (*pretest*) y dos por salida (*posttest*):
+
+| Estructura | Control | Evaluación de condición | Se ejecuta al menos 1 vez | Equivalente Python |
+|---|---|---|---|---|
+| `mientras...fin_mientras` | Pretest | Antes de cada iteración | No | `while` |
+| `hacer...mientras` (do-while) | Posttest | Al final, continúa si es **verdadera** | Sí | No tiene nativo — se simula con `while True:` + `if cond: break` |
+| `repetir...hasta_que` | Posttest | Al final, continúa si es **falsa** (sale cuando se vuelve verdadera) | Sí | No tiene nativo — misma simulación, condición invertida |
+| `desde...fin_desde` (`para`) | Pretest, conteo fijo | Variable de control con `desde v ← vi hasta vf [inc/dec p]` | Depende del rango | `for ... in range(...)` |
+
+Nótese la diferencia sutil entre `hacer-mientras` y `repetir-hasta_que`: ambos ejecutan el cuerpo al menos una vez (post-test), pero **el primero continúa mientras la condición es verdadera** y **el segundo continúa mientras es falsa** (termina cuando se cumple).
+
+### Sentencias de salto dentro de un bucle
+- **`interrumpir`** (equivalente a `break`): fuerza la salida inmediata del bucle, sin esperar a que la condición se evalúe.
+- **`continuar`** (equivalente a `continue`): salta el resto del cuerpo y pasa a la siguiente iteración.
+- Nota de contraste: la página ya documentaba que la cátedra de Algoritmia/UADE no usa `break` en sus ejercicios (ver "Banderas" arriba) — eso es una **restricción pedagógica del curso**, no una ausencia del lenguaje: Python sí implementa `break`/`continue` de forma nativa, igual que la mayoría de los lenguajes estructurados que describe Joyanes.
+
+### Métodos de terminación de un bucle controlado por datos leídos
+1. Preguntar antes de cada iteración si hay que continuar.
+2. Usar una lista encabezada por su tamaño (se lee primero cuántos elementos vienen).
+3. Usar un **valor centinela** (un dato que no es válido como entrada real, p. ej. `-1` o `'***'`) que marca el final.
+4. Detectar el agotamiento de los datos de entrada (fin de archivo).
+
+### Bucles anidados
+Un bucle dentro de otro (`para` dentro de `repetir`, `para` dentro de `para`, etc.) — el bucle interno completa **todas** sus iteraciones por cada iteración del externo. Caso típico: tablas de multiplicar o matrices con doble índice (`i`, `j`).
+
 ## Referencias
 
 - [[fuentes/control-flujo-ciclos-mm]]
 - [[fuentes/guia-estudio-algoritmia-mm]]
+- [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
 - [[conceptos/estructura-condicional]]
 - [[conceptos/listas-python]]

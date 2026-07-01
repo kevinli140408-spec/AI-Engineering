@@ -76,6 +76,9 @@ for i in range(5):
 ## Listas y algoritmos
 Las listas son la estructura base sobre la que operan los [[conceptos/algoritmos-busqueda|algoritmos de búsqueda]] y los [[conceptos/algoritmos-ordenamiento|algoritmos de ordenamiento]].
 
+## Contraste: listas dinámicas vs. arrays estáticos
+La lista de Python es **dinámica** (crece/encoge en tiempo de ejecución con `append`/`insert`/`pop`/`remove`) e indexada desde 0. En pseudocódigo algorítmico clásico (lenguaje C, Pascal, etc.) la estructura equivalente es el **array**, que es de tamaño **fijo**, requiere desplazar elementos manualmente para insertar/borrar, y puede tener límites de índice arbitrarios (no necesariamente desde 0) — ver [[conceptos/arrays-vectores-matrices]].
+
 ## Referencias
 
 - [[fuentes/taller-listas-mm]]
@@ -84,3 +87,4 @@ Las listas son la estructura base sobre la que operan los [[conceptos/algoritmos
 - [[conceptos/funciones-programacion]]
 - [[conceptos/algoritmos-busqueda]]
 - [[conceptos/algoritmos-ordenamiento]]
+- [[conceptos/arrays-vectores-matrices]]

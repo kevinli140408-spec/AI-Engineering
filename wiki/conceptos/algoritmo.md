@@ -49,7 +49,7 @@ Comentarios: `//` (línea) o `/* */` (multilínea) en notación tipo C; `{ }` en
 ## Tipos de errores al ejecutar un programa
 - **De compilación**: uso incorrecto de las reglas del lenguaje (errores de sintaxis); el compilador no genera el programa objeto.
 - **De ejecución**: instrucciones comprensibles pero no ejecutables (p. ej. división por cero); detienen el programa con un mensaje de error.
-- **Lógicos**: el programa corre sin errores de compilación ni ejecución, pero produce resultados incorrectos; los más difíciles de detectar — obligan a revisar el diseño del algoritmo. Ver proceso completo en [[conceptos/metodologia-de-la-programacion]].
+- **Lógicos**: el programa corre sin errores de compilación ni ejecución, pero produce resultados incorrectos; los más difíciles de detectar — obligan a revisar el diseño del algoritmo. Ver proceso completo en [[conceptos/metodologia-de-la-programacion]] y técnicas de depuración y pruebas en [[conceptos/depuracion-y-pruebas]].
 
 ## Algoritmo vs. lenguaje vs. computadora
 > "En la ciencia de la computación y en la programación, los algoritmos son más importantes que los lenguajes de programación o las computadoras." (Joyanes Aguilar)
@@ -64,3 +64,4 @@ Un lenguaje de programación es solo un medio para expresar un algoritmo; la com
 - [[conceptos/lenguajes-de-programacion]]
 - [[conceptos/metodologia-de-la-programacion]]
 - [[conceptos/programacion-orientada-a-objetos]]
+- [[conceptos/depuracion-y-pruebas]]

@@ -2,7 +2,7 @@
 titulo: "Estructura del Curso Fundamentos de Informática / Algoritmia (UADE)"
 tipo: analisis
 creado: 2026-06-30
-actualizado: 2026-06-30
+actualizado: 2026-07-01
 tags: [algoritmia, uade, sintesis, curso, python]
 fuentes: [pensamiento-computacional-mm, algoritmos-secuenciales-mm, control-flujo-ciclos-mm, funciones-existentes-mm, resumen-clase5-mm, cadenas-caracteres-mm, taller-listas-mm, funciones-listas-mm, listas-python-mm, orden-busqueda-mm, guia-estudio-algoritmia-mm]
 ---
@@ -55,7 +55,7 @@ El curso avanza de lo abstracto a lo concreto:
 - **Evaluación escrita** (primer parcial): se trabaja con lápiz y papel, pseudocódigo y diagramas de flujo (Flowgorithm) antes de traducir a código.
 
 ## Bibliografía principal
-- Joyanes Aguilar, Luis. *Fundamentos de Programación*. McGraw-Hill. Ingesta en curso en [[fuentes/joyanes-aguilar-fundamentos-de-programacion]].
+- Joyanes Aguilar, Luis. *Fundamentos de Programación*. McGraw-Hill. Ingesta completa (18 capítulos + apéndices) en [[fuentes/joyanes-aguilar-fundamentos-de-programacion]] — ver mapa completo y contraste con el alcance del curso en [[analisis/estructura-libro-joyanes-fundamentos-programacion]].
 - Marzal Varó, A.; García Luengo, I.; García Sevilla, P. *Introducción práctica a la programación con Python 3*. I'Une.
 
 ## Referencias

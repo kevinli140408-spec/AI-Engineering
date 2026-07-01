@@ -2,7 +2,7 @@
 titulo: "Representación de la Información"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-06-30
+actualizado: 2026-07-01
 tags: [bits, codificacion, ascii, unicode, sistemas-de-numeracion]
 fuentes: [joyanes-aguilar-fundamentos-de-programacion]
 ---
@@ -23,8 +23,10 @@ Ejemplo: 54 en decimal equivale a `00110110` en binario.
 
 ## Codificación de caracteres
 - **ASCII** (American Standard Code for Information Interchange): 7 bits → 128 caracteres; ampliado a 8 bits → 256. El más usado históricamente.
-- **Unicode**: 16 bits → 65.536 símbolos; soporta alfabetos no latinos (chino, árabe, etc.). Usado por lenguajes como Java.
+- **Unicode**: 16 bits → 65.536 símbolos; soporta alfabetos no latinos (chino, árabe, etc.). Usado por lenguajes como Java. Mantenido por el consorcio Unicode (Apple, IBM, Microsoft, Oracle, entre otros); llamado a reemplazar a ASCII y a otros códigos regionales como Latin-1.
 - **EBCDIC**: código de 8 bits, pionero de IBM, hoy en desuso.
+
+> Las tablas completas de códigos ASCII (incluidos códigos de control y de teclado) están en el Apéndice C del libro — son datos de referencia (lookup), no contenido conceptual, por lo que no se vuelcan a una página propia del wiki.
 
 ## Representación de datos numéricos
 - **Enteros**: notación binaria directa, con o sin signo; el rango depende del tamaño en bytes (p. ej. `int` de 4 bytes en C++: -2.147.483.648 a 2.147.483.647).

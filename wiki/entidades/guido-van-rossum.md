@@ -4,6 +4,7 @@ tipo: entidad
 creado: 2026-06-30
 actualizado: 2026-06-30
 tags: [persona, python, creador]
+fuentes: [guia-estudio-algoritmia-mm]
 ---
 
 # Guido van Rossum

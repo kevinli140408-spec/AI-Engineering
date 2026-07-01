@@ -4,7 +4,7 @@ tipo: concepto
 creado: 2026-06-30
 actualizado: 2026-06-30
 tags: [ordenamiento, algoritmos, listas, python]
-fuentes: [orden-busqueda-mm]
+fuentes: [orden-busqueda-mm, joyanes-aguilar-fundamentos-de-programacion]
 ---
 
 # Algoritmos de Ordenamiento
@@ -68,8 +68,15 @@ Al ordenar una lista, si existe otra lista relacionada por subíndice (ej. legaj
 ## Consideraciones
 > "Ordenar listas es un proceso lento y costoso. Solo debe realizarse cuando sea estrictamente necesario."
 
+## Métodos más avanzados (Joyanes Aguilar)
+- **Shell**: mejora la inserción comparando elementos separados por un **salto** (`salto = N // 2`, reduciéndose a la mitad en cada pasada hasta llegar a 1), en lugar de elementos contiguos. Reduce drásticamente los desplazamientos largos típicos de la inserción simple en listas grandes.
+- **Quicksort (ordenación rápida)**: usa la estrategia **"divide y vencerás"**. Se elige un **pivote**, se reordena el vector de modo que los menores queden a su izquierda y los mayores a su derecha (partición), y se aplica el mismo proceso recursivamente a cada mitad. Es, en promedio, el método más rápido de los vistos — base del algoritmo `sorted()`/`list.sort()` de muchos lenguajes (aunque Python usa *Timsort*, un híbrido de inserción y *merge sort*).
+- **Mergesort (Cap. 14)**: versión recursiva de la [[conceptos/intercalacion|intercalación]] aplicada como método de ordenamiento completo: divide el vector por la mitad recursivamente hasta sublistas de un elemento (caso base, trivialmente ordenadas), y va mezclando los resultados al volver de cada llamada — el mismo patrón "divide y vencerás" de quicksort, pero dividiendo siempre por posición central en vez de por pivote. Tanto quicksort como mergesort son, en esencia, [[conceptos/recursividad|algoritmos recursivos]]: ver también el caso clásico de [[conceptos/torres-de-hanoi]] como ejemplo de recursión "divide y vencerás" en estado puro.
+
 ## Referencias
 
 - [[fuentes/orden-busqueda-mm]]
+- [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
 - [[conceptos/listas-python]]
 - [[conceptos/algoritmos-busqueda]]
+- [[conceptos/intercalacion]]

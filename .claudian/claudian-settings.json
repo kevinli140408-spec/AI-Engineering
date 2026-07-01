@@ -10,7 +10,9 @@
   "excludedTags": [],
   "mediaFolder": "",
   "systemPrompt": "",
-  "persistentExternalContextPaths": [],
+  "persistentExternalContextPaths": [
+    "C:\\Users\\lik00\\Documents\\AI\\AI Engineering"
+  ],
   "sharedEnvironmentVariables": "",
   "envSnippets": [],
   "customContextLimits": {},

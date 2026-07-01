@@ -32,13 +32,16 @@
 - [[fuentes/listas-python-mm]] — Listas en Python: slicing, métodos, ejercicios por niveles (2026-06-30)
 - [[fuentes/orden-busqueda-mm]] — Métodos de ordenamiento (selección, burbujeo, inserción) y búsqueda (2026-06-30)
 - [[fuentes/guia-estudio-algoritmia-mm]] — Guía de estudio integral de Algoritmia, 48 páginas (2026-06-30)
-- [[fuentes/joyanes-aguilar-fundamentos-de-programacion]] — Libro de texto Fundamentos de Programación, 802 págs., ingesta capítulo por capítulo en curso (2026-06-30)
+- [[fuentes/joyanes-aguilar-fundamentos-de-programacion]] — Libro de texto Fundamentos de Programación, 802 págs., ingesta completa: 18 capítulos + 4 apéndices (2026-06-30 a 2026-07-01)
 
 ## Entidades
 - [[entidades/obsidian]] — Editor de notas markdown con enlaces bidireccionales
 - [[entidades/uade]] — Universidad Argentina de la Empresa
 - [[entidades/python]] — Lenguaje de programación interpretado, alto nivel, multiparadigma
 - [[entidades/guido-van-rossum]] — Creador del lenguaje Python
+- [[entidades/tim-berners-lee]] — Creador de la World Wide Web (HTML, HTTP, URL) en el CERN
+- [[entidades/omg]] — Consorcio que estandariza UML, CORBA y MDA
+- [[entidades/tres-amigos-uml]] — Rumbaugh, Jacobson y Booch, unificadores de UML
 
 ## Conceptos
 - [[conceptos/retrieval-augmented-generation]] — Arquitectura que combina LLMs con recuperación de documentos externos
@@ -75,21 +78,51 @@
 - [[conceptos/variable-programacion]] — Nombre, tipo de dato y dirección de memoria; tipos int/float/str/bool
 - [[conceptos/estructura-secuencial]] — Acciones ejecutadas una tras otra, de arriba hacia abajo
 - [[conceptos/estructura-condicional]] — if/elif/else; operadores relacionales y lógicos (and/or)
-- [[conceptos/estructura-iterativa]] — Ciclos while/for; contadores, acumuladores, ciclos infinitos
-- [[conceptos/funciones-programacion]] — Programación modular; parámetros, return, módulos random/math/time
-- [[conceptos/cadenas-de-caracteres]] — Strings: operadores, métodos, f-strings
+- [[conceptos/estructura-iterativa]] — Ciclos while/for; contadores, acumuladores, ciclos infinitos; mientras/hacer-mientras/repetir/desde
+- [[conceptos/funciones-programacion]] — Programación modular; parámetros, return, módulos random/math/time; función vs. procedimiento, ámbito, paso por valor/referencia
+- [[conceptos/recursividad]] — Funciones que se llaman a sí mismas; directa/indirecta, condiciones de corrección, recursión vs. iteración
+- [[conceptos/cadenas-de-caracteres]] — Strings: operadores, métodos, f-strings; equivalencias con funciones de cadena en pseudocódigo algorítmico
 - [[conceptos/listas-python]] — Estructura de datos ordenada y mutable; slicing, métodos, recorrido
-- [[conceptos/algoritmos-busqueda]] — Búsqueda secuencial y binaria sobre listas
-- [[conceptos/algoritmos-ordenamiento]] — Selección, burbujeo e inserción
+- [[conceptos/algoritmos-busqueda]] — Búsqueda secuencial y binaria sobre listas; transformación de claves (hashing) y colisiones
+- [[conceptos/algoritmos-ordenamiento]] — Selección, burbujeo, inserción, Shell y quicksort
+- [[conceptos/intercalacion]] — Combinar dos vectores ordenados en uno solo (merge)
 - [[conceptos/paradigmas-de-programacion]] — Imperativo, declarativo, orientado a objetos, funcional; línea histórica de lenguajes
 - [[conceptos/organizacion-de-computadoras]] — Arquitectura Von Neumann, UCP, memoria, almacenamiento, sistema operativo
 - [[conceptos/representacion-de-la-informacion]] — Bits, sistemas de numeración, ASCII/Unicode, codificación de datos
 - [[conceptos/redes-y-web]] — LAN/WAN, cliente-servidor, P2P, Internet, Web 2.0
 - [[conceptos/metodologia-de-la-programacion]] — Fases de resolución de problemas, diseño descendente, programación modular y estructurada
-- [[conceptos/programacion-orientada-a-objetos]] — Objetos, clases, abstracción, encapsulamiento, herencia, polimorfismo
+- [[conceptos/programacion-orientada-a-objetos]] — Objetos, clases, TAD, identificación de objetos en 4 pasos, abstracción, encapsulamiento, herencia, polimorfismo
 - [[conceptos/operadores-y-expresiones]] — Tipos de datos, operadores aritméticos/relacionales/lógicos, precedencia, funciones internas
+- [[conceptos/arrays-vectores-matrices]] — Arrays estáticos: vectores, matrices, almacenamiento en memoria (filas vs. columnas)
+- [[conceptos/estructuras-registros]] — Registros heterogéneos, arrays de estructuras, uniones, enumeraciones
+- [[conceptos/archivos-ficheros]] — Jerarquía de datos, organización secuencial/directa/indexada, streams vs. open() de Python
+- [[conceptos/algoritmos-archivos]] — Algoritmos de creación/consulta/actualización; transformación de clave (hash), colisiones, indexación
+- [[conceptos/ordenacion-externa]] — Ordenación de archivos grandes: partición, fusión, mezcla directa/natural/equilibrada
+- [[conceptos/listas-enlazadas]] — Punteros, nodos, listas simple/circular/doblemente enlazada
+- [[conceptos/pilas-y-colas]] — Pilas (LIFO), colas (FIFO), bicola; equivalente con collections.deque
+- [[conceptos/arboles]] — Árbol general, árbol binario, recorridos pre/in/post-orden, árbol binario de búsqueda
+- [[conceptos/grafos]] — Vértices, aristas, dirigidos/ponderados; matriz y lista de adyacencia
+- [[conceptos/torres-de-hanoi]] — Problema clásico de recursión "divide y vencerás"; complejidad 2^n - 1
+- [[conceptos/uml]] — Lenguaje unificado de modelado: tipos de diagramas, historia, OMG, MDA
+- [[conceptos/uml-diagrama-de-clases]] — Notación gráfica de objetos y clases en UML: compartimentos, visibilidad (+/#/-), OCL
+- [[conceptos/constructores-destructores]] — Constructores, destructores, recolección de basura; C++ vs. Java/C#
+- [[conceptos/relaciones-entre-clases]] — Dependencia, asociación (multiplicidad, cualificada, reflexiva), agregación, composición
+- [[conceptos/herencia]] — Generalización/especialización, herencia simple/múltiple, accesibilidad
+- [[conceptos/clases-abstractas]] — Clase y operación abstracta, redefinición, base del polimorfismo
+- [[conceptos/ciclo-de-vida-del-software]] — Modelo en cascada, Proceso Unificado, roles cliente/desarrollador/usuario
+- [[conceptos/principios-diseno-software]] — Abstracción, ocultación, modularidad (acoplamiento/cohesión), las "-idades" de calidad
+- [[conceptos/estilo-y-documentacion]] — 12 reglas de estilo de programación; documentación de usuario vs. de sistema
+- [[conceptos/depuracion-y-pruebas]] — Tipos de error, técnicas de depuración, pruebas caja negra/blanca, verificación formal
+- [[conceptos/lenguaje-algoritmico-upsam]] — Referencia formal del pseudocódigo: sintaxis, operadores, biblioteca estándar, POO
+- [[conceptos/guia-sintaxis-c]] — Preprocesador, macros, tipos/tamaños, punteros a funciones, campos de bits en C
+- [[conceptos/tipo-abstracto-de-dato]] — Modelo de dato que separa especificación (comportamiento) de implementación; base de la clase
+- [[conceptos/arquitectura-von-neumann]] — Programa almacenado, ciclo fetch-decode-execute, cuello de botella de Von Neumann
+- [[conceptos/algoritmo-de-dijkstra]] — Camino más corto en grafos ponderados no negativos; enfoque voraz
+- [[conceptos/recoleccion-de-basura]] — Gestión automática de memoria: conteo de referencias, mark-and-sweep, generacional
+- [[conceptos/verificacion-formal]] — Demostración matemática de corrección vía precondiciones/postcondiciones e invariantes
 
 ## Análisis
 - [[analisis/estructura-curso-algebra-geometria-uade]] — Síntesis y mapa del curso de Álgebra y Geometría (UADE)
 - [[analisis/estructura-curso-pensamiento-critico-uade]] — Síntesis y mapa del curso de Pensamiento Crítico y Comunicación (UADE)
 - [[analisis/estructura-curso-algoritmia-uade]] — Síntesis y mapa del curso de Fundamentos de Informática / Algoritmia (UADE)
+- [[analisis/estructura-libro-joyanes-fundamentos-programacion]] — Mapa completo del libro Joyanes Aguilar (6 bloques) y contraste con el alcance del curso UADE

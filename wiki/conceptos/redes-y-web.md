@@ -18,7 +18,7 @@ Una **red** conecta varias computadoras entre sí para compartir recursos (impre
 - **P2P (peer-to-peer)**: las computadoras colaboran entre sí sin un servidor central (p. ej. Napster, redes científicas distribuidas).
 
 ## Internet y la World Wide Web
-La **WWW** (creada en 1989 por Tim Berners-Lee en el CERN) es un sistema de estándares para almacenar, recuperar y visualizar información mediante arquitectura cliente-servidor. Conceptos clave:
+La **WWW** (creada en 1989 por [[entidades/tim-berners-lee]] en el CERN) es un sistema de estándares para almacenar, recuperar y visualizar información mediante arquitectura cliente-servidor. Conceptos clave:
 - **HTML**: lenguaje de marcado para páginas Web.
 - **URL**: dirección única de una página Web.
 - **Navegador (browser)**: interfaz para acceder a la Web.
@@ -30,3 +30,4 @@ Generación de la Web (término acuñado en 2004 por Tim O'Reilly) caracterizada
 ## Referencias
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
 - [[conceptos/organizacion-de-computadoras]]
+- [[entidades/tim-berners-lee]]

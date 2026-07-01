@@ -2,7 +2,7 @@
 titulo: "Metodología de la Programación"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-06-30
+actualizado: 2026-07-01
 tags: [metodologia, diseno-descendente, programacion-modular, programacion-estructurada]
 fuentes: [joyanes-aguilar-fundamentos-de-programacion]
 ---
@@ -33,7 +33,14 @@ Lenguajes procedimentales (C, Pascal, FORTRAN) organizan el programa en funcione
 
 Esta limitación es la motivación directa de la [[conceptos/programacion-orientada-a-objetos|Programación Orientada a Objetos]].
 
+## De la programación individual a la ingeniería de software
+Las 7 fases anteriores describen la programación a pequeña escala. Cuando el proyecto es grande (equipos de programadores, +100.000 líneas de código) estas fases se formalizan como el [[conceptos/ciclo-de-vida-del-software|ciclo de vida del software]] (modelo en cascada, Proceso Unificado), y se rigen por un conjunto más amplio de [[conceptos/principios-diseno-software|principios de diseño de software]], [[conceptos/estilo-y-documentacion|reglas de estilo y documentación]] y técnicas de [[conceptos/depuracion-y-pruebas|depuración y pruebas]].
+
 ## Referencias
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
 - [[conceptos/algoritmo]]
 - [[conceptos/programacion-orientada-a-objetos]]
+- [[conceptos/ciclo-de-vida-del-software]]
+- [[conceptos/principios-diseno-software]]
+- [[conceptos/estilo-y-documentacion]]
+- [[conceptos/depuracion-y-pruebas]]
