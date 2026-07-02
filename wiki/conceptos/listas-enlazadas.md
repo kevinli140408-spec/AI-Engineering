@@ -12,7 +12,7 @@ fuentes: [joyanes-aguilar-fundamentos-de-programacion]
 A diferencia de los [[conceptos/arrays-vectores-matrices|arrays]] (estructuras **estáticas**, tamaño fijo en memoria), las **estructuras dinámicas de datos** crecen y se contraen durante la ejecución del programa. Están formadas por **nodos** — variables dinámicas con al menos un campo de dato y un campo **enlace** (puntero) que referencia al siguiente nodo.
 
 ## Puntero
-Un **puntero** (apuntador) es una variable cuyo valor es la dirección de otra variable. Operaciones básicas: inicialización (`p ← nulo`), asignación (`p ← q`), comparación, `reservar(p)` (pedir memoria) y `liberar(p)` (devolverla). C/C++/Pascal/Ada usan punteros explícitos; Java/C# no exponen punteros pero almacenan referencias a objetos con recolección automática de basura; FORTRAN/COBOL (sin tipo puntero) simulan el enlace con un índice entero sobre un array.
+Un **puntero** (apuntador) es una variable cuyo valor es la dirección de otra variable. Operaciones básicas: inicialización (`p ← nulo`), asignación (`p ← q`), comparación, `reservar(p)` (pedir memoria) y `liberar(p)` (devolverla). [[entidades/lenguaje-c|C/C++]]/Pascal/Ada usan punteros explícitos; Java/C# no exponen punteros pero almacenan referencias a objetos con recolección automática de basura; FORTRAN/COBOL (sin tipo puntero) simulan el enlace con un índice entero sobre un array.
 
 ## Lista simplemente enlazada
 Cada nodo apunta solo al siguiente; el último apunta a `nulo`. Operaciones centrales:
@@ -37,3 +37,4 @@ Python no expone punteros ni nodos manuales: la `list` es un array dinámico (no
 - [[conceptos/listas-python]]
 - [[conceptos/pilas-y-colas]]
 - [[conceptos/estructuras-registros]]
+- [[entidades/lenguaje-c]]

@@ -2,9 +2,9 @@
 titulo: "Estructura de Control Iterativa"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-06-30
+actualizado: 2026-07-01
 tags: [estructuras-de-control, ciclos, while, for, python]
-fuentes: [control-flujo-ciclos-mm, guia-estudio-algoritmia-mm, joyanes-aguilar-fundamentos-de-programacion]
+fuentes: [control-flujo-ciclos-mm, guia-estudio-algoritmia-mm, joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
 ---
 
 # Estructura de Control Iterativa
@@ -104,10 +104,17 @@ Nótese la diferencia sutil entre `hacer-mientras` y `repetir-hasta_que`: ambos 
 ### Bucles anidados
 Un bucle dentro de otro (`para` dentro de `repetir`, `para` dentro de `para`, etc.) — el bucle interno completa **todas** sus iteraciones por cada iteración del externo. Caso típico: tablas de multiplicar o matrices con doble índice (`i`, `j`).
 
+## `for...in` sobre cualquier secuencia (no solo `range`)
+El `for...in` de Python recorre cualquier serie de valores, no solo rangos numéricos: `for nombre in ['Ana', 'Luis', 'Eva']:` asigna a `nombre` cada elemento de la lista en cada iteración ([[fuentes/introduccion-a-la-programacion-con-python-3]]). `range(inicio, fin, paso)` es solo el caso más común: genera un objeto "perezoso" (no una lista materializada) con los enteros de `inicio` a `fin` **sin incluir `fin`**, opcionalmente con `paso` (que puede ser negativo, para recorrer en orden descendente).
+
+### El "error Obi-Wan" (off-by-one)
+Equivocarse en un extremo de un rango — iterar una vez de más o de menos — es tan frecuente al programar que tiene nombre propio: **error Obi-Wan** ("off by one", que suena parecido a "Obi Wan" Kenobi). `range(a, b)` produce exactamente `b - a` elementos porque `b` queda excluido; olvidar ese detalle es la causa más común de este tipo de error.
+
 ## Referencias
 
 - [[fuentes/control-flujo-ciclos-mm]]
 - [[fuentes/guia-estudio-algoritmia-mm]]
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
+- [[fuentes/introduccion-a-la-programacion-con-python-3]]
 - [[conceptos/estructura-condicional]]
 - [[conceptos/listas-python]]

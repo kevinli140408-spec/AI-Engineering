@@ -11,11 +11,11 @@ fuentes: [tablas-de-verdad-mm]
 
 Herramienta de la [[conceptos/logica-proposicional]] que consigna todos los valores de verdad posibles de una fórmula proposicional. Permite determinar si un razonamiento es válido y clasificar fórmulas según su comportamiento lógico.
 
-## Summary
+## Resumen
 
 Una tabla de verdad asigna todas las combinaciones posibles de verdadero (V) y falso (F) a las variables de una fórmula y calcula el valor resultante. La cantidad de renglones es 2ⁿ, donde n es el número de variables distintas (1 variable → 2 renglones, 2 → 4, 3 → 8, etc.).
 
-## Key Concepts
+## Conceptos Clave
 
 ### Tablas de las conectivas básicas
 
@@ -37,13 +37,13 @@ Una tabla de verdad asigna todas las combinaciones posibles de verdadero (V) y f
 
 Cada renglón de la tabla puede ilustrarse con [[conceptos/proposicion|proposiciones]] del lenguaje natural que tengan los valores de verdad correspondientes. Esto conecta el cálculo formal con la interpretación semántica.
 
-## Relationships
+## Relaciones
 
 - [[conceptos/logica-proposicional]] — marco formal donde se definen las tablas de verdad
 - [[conceptos/proposicion]] — unidad cuyo valor de verdad se tabula
 - [[conceptos/clasificacion-proposiciones]] — tipología que resulta de evaluar una tabla completa
 - [[conceptos/logica]] — disciplina general a la que pertenece este método
 
-## References
+## Referencias
 
 - [[fuentes/tablas-de-verdad-mm]]

@@ -55,3 +55,4 @@ No se detectaron contradicciones entre cap√≠tulos: el libro mantiene terminolog√
 ## Referencias
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
 - [[analisis/estructura-curso-algoritmia-uade]]
+- [[analisis/estructura-libro-marzal-python3]]

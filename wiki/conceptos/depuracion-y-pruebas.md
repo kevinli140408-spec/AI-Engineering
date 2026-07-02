@@ -4,7 +4,7 @@ tipo: concepto
 creado: 2026-07-01
 actualizado: 2026-07-01
 tags: [depuracion, pruebas, testing, caja-negra, caja-blanca, verificacion]
-fuentes: [joyanes-aguilar-fundamentos-de-programacion]
+fuentes: [joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
 ---
 
 # Depuración y Pruebas (Testing)
@@ -42,8 +42,23 @@ Método complementario a las pruebas: usa reglas matemáticas para demostrar que
 ## El depurador
 Un Entorno Integrado de Desarrollo (EID) incluye un depurador que permite ejecutar el programa sentencia a sentencia, insertar breakpoints, y observar/trazar variables — herramienta central para aplicar en la práctica las técnicas anteriores.
 
+## Traza de ejecución
+Técnica manual (sin depurador) para entender o depurar un programa: seguir el curso del programa línea a línea para una configuración concreta de datos de entrada, anotando qué sentencias se ejecutan y qué valor toma cada variable en cada paso ([[fuentes/introduccion-a-la-programacion-con-python-3]]). Es especialmente útil con estructuras condicionales, donde conviene trazar al menos un caso por cada rama posible para verificar que el programa hace lo esperado en todas ellas.
+
+## Manejo de excepciones en Python (`try`/`except`)
+Alternativa a comprobar errores por anticipado con `if` (lo que puede llenar el programa de comprobaciones): "intenta ejecutar este bloque y, si se produce un error, ejecuta este otro". Sintaxis básica:
+```python
+try:
+    x = b / a
+    print(x)
+except:
+    print("Error: no se pudo calcular.")
+```
+Si el bloque `try` lanza una excepción, la ejecución salta inmediatamente al bloque `except`, saltándose el resto de sentencias del `try`. Cada tipo de error tiene una clase de excepción asociada (p. ej. `ZeroDivisionError`, `ValueError`), y es posible encadenar varias cláusulas `except <Tipo>:` para dar un tratamiento distinto según qué error concreto se produjo — evita tener que deducir a posteriori qué falló a partir de los valores de las variables.
+
 ## Referencias
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
+- [[fuentes/introduccion-a-la-programacion-con-python-3]]
 - [[conceptos/algoritmo]]
 - [[conceptos/principios-diseno-software]]
 - [[conceptos/estilo-y-documentacion]]

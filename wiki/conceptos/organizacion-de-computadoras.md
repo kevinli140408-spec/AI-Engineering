@@ -12,7 +12,7 @@ fuentes: [joyanes-aguilar-fundamentos-de-programacion]
 Una **computadora** es un dispositivo electrónico que procesa información: recibe datos de entrada, los procesa y produce datos de salida (resultados). Se compone de dos partes: **hardware** (equipo físico) y **software** (programas) — ver [[conceptos/lenguajes-de-programacion]].
 
 ## Arquitectura de Von Neumann
-Diseño propuesto en 1946 por John von Neumann: el programa y los datos se almacenan juntos en la memoria de la computadora ("programa almacenado"), en vez de fijarse por cableado físico como en el ENIAC (1946). Es la base de las computadoras digitales actuales — desarrollo completo (ciclo de instrucción, cuello de botella) en [[conceptos/arquitectura-von-neumann]]. Cinco componentes principales:
+Diseño propuesto en 1946 por [[entidades/john-von-neumann|John von Neumann]]: el programa y los datos se almacenan juntos en la memoria de la computadora ("programa almacenado"), en vez de fijarse por cableado físico como en el ENIAC (1946). Es la base de las computadoras digitales actuales — desarrollo completo (ciclo de instrucción, cuello de botella) en [[conceptos/arquitectura-von-neumann]]. Cinco componentes principales:
 
 1. **Dispositivos de entrada** — teclado, ratón, escáner...
 2. **Unidad Central de Proceso (UCP/CPU)**, compuesta por:
@@ -59,3 +59,4 @@ El **sistema operativo** asigna memoria, gestiona dispositivos de E/S y planific
 - [[conceptos/representacion-de-la-informacion]]
 - [[conceptos/redes-y-web]]
 - [[conceptos/arquitectura-von-neumann]]
+- [[entidades/john-von-neumann]]

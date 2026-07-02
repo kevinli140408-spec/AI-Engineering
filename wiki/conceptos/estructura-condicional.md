@@ -2,9 +2,9 @@
 titulo: "Estructura de Control Condicional"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-06-30
+actualizado: 2026-07-01
 tags: [estructuras-de-control, condicional, python, operadores-logicos]
-fuentes: [algoritmos-secuenciales-mm, control-flujo-ciclos-mm, guia-estudio-algoritmia-mm, joyanes-aguilar-fundamentos-de-programacion]
+fuentes: [algoritmos-secuenciales-mm, control-flujo-ciclos-mm, guia-estudio-algoritmia-mm, joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
 ---
 
 # Estructura de Control Condicional
@@ -66,12 +66,20 @@ Python permite encadenar comparaciones: `1 <= nota <= 10` equivale a `nota >= 1 
 - **Estructuras anidadas (en escalera)**: un `si` dentro de otro `si`, tantas veces como sea necesario — equivalente a los `elif` encadenados de Python, pero requiere indentación explícita y cierre (`fin_si`) por cada nivel.
 - **La sentencia `ir_a` (`goto`)**: bifurcación incondicional a una etiqueta. Históricamente controvertida (criticada por [[conceptos/algoritmo-de-dijkstra|Dijkstra]]); los lenguajes estructurados modernos la evitan casi por completo — Python ni siquiera la implementa.
 
+## Evaluación con cortocircuito (short-circuit)
+Python evalúa expresiones lógicas solo hasta donde hace falta para conocer el resultado ([[fuentes/introduccion-a-la-programacion-con-python-3]]): en `a or b`, si `a` es `True`, `b` ni siquiera se evalúa (el resultado ya es `True`); en `a and b`, si `a` es `False`, `b` no se evalúa. Esto permite un patrón muy común para evitar errores: `if a != 0 and 1/a > 1:` nunca provoca división por cero, porque si `a == 0` la primera condición ya es falsa y Python no llega a evaluar `1/a`.
+
+### Negaciones y leyes de De Morgan
+Las negaciones combinadas con `and`/`or` son una fuente frecuente de errores para quienes empiezan a programar. La negación de `a and b` **no** es `not a and not b`, sino `not a or not b` (y viceversa) — ver la formalización completa en [[conceptos/metodo-demostrativo]] (leyes de De Morgan, abreviadas `DM`).
+
 ## Referencias
 
 - [[fuentes/algoritmos-secuenciales-mm]]
 - [[fuentes/control-flujo-ciclos-mm]]
 - [[fuentes/guia-estudio-algoritmia-mm]]
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
+- [[fuentes/introduccion-a-la-programacion-con-python-3]]
 - [[conceptos/estructura-secuencial]]
 - [[conceptos/estructura-iterativa]]
 - [[conceptos/algoritmo-de-dijkstra]]
+- [[conceptos/metodo-demostrativo]]

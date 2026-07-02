@@ -19,7 +19,7 @@ Es **transitiva** (si `C` deriva de `B` y `B` de `A`, entonces `C` es-un `A`), *
 
 ## Herencia simple vs. múltiple
 - **Herencia simple**: una clase tiene exactamente un padre. Puede haber varios niveles (`Caballo` ← `Mamífero` ← `Animal`).
-- **Herencia múltiple**: una clase hereda de dos o más clases base. Soportada por UML y C++, **no por Java ni C#**, porque introduce **ambigüedad** cuando dos clases base comparten un atributo/operación con el mismo nombre (resoluble en C++ con el operador de ámbito `::`, p. ej. `v.Fuente::dimensionar()`).
+- **Herencia múltiple**: una clase hereda de dos o más clases base. Soportada por UML y [[entidades/lenguaje-c|C++]], **no por Java ni C#**, porque introduce **ambigüedad** cuando dos clases base comparten un atributo/operación con el mismo nombre (resoluble en C++ con el operador de ámbito `::`, p. ej. `v.Fuente::dimensionar()`).
 - **Generalización múltiple**: una subclase puede descender de un único tipo genérico directo, pero los descendientes de un mismo nodo no son necesariamente mutuamente excluyentes (p. ej. `Gerente` e `Informático` pueden solaparse).
 
 ## Sintaxis de declaración
@@ -54,3 +54,4 @@ El tipo de acceso se especifica por cada clase base individualmente; si se omite
 - [[conceptos/relaciones-entre-clases]]
 - [[conceptos/clases-abstractas]]
 - [[conceptos/uml-diagrama-de-clases]]
+- [[entidades/lenguaje-c]]

@@ -2,9 +2,9 @@
 titulo: "Funciones (Programación Modular)"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-06-30
+actualizado: 2026-07-01
 tags: [funciones, programacion-modular, python, modulos]
-fuentes: [funciones-existentes-mm, funciones-listas-mm, joyanes-aguilar-fundamentos-de-programacion]
+fuentes: [funciones-existentes-mm, funciones-listas-mm, joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
 ---
 
 # Funciones (Programación Modular)
@@ -60,6 +60,13 @@ Funciones ya programadas, agrupadas en **módulos** que se importan con `import`
 
 Funciones **incorporadas (built-in)**: `print()`, `input()`, `int()`/`float()`/`str()`, `abs()`, `len()` — no requieren `import`.
 
+### Formas de importar ([[fuentes/introduccion-a-la-programacion-con-python-3]])
+- `from math import sin, cos` — importa funciones puntuales; se usan sin prefijo (`sin(x)`). Mejora la legibilidad porque se sabe de qué módulo proviene cada identificador.
+- `from math import *` — importa todo el contenido del módulo. Cómodo, pero riesgoso: si el programa ya tenía una variable con el mismo nombre que una función del módulo (p. ej. `pow`), esta la sobrescribe silenciosamente y produce errores difíciles de rastrear.
+- `import math` — importa el módulo completo bajo su propio espacio de nombres; se accede con prefijo (`math.sqrt(x)`). Evita por completo el problema de colisión de nombres.
+
+Además de `math` (funciones trigonométricas, `exp`, `log`, `sqrt`, `ceil`, `floor`, constantes `pi`/`e`), el módulo `sys` da acceso a información del sistema: `sys.exit()` (aborta el intérprete), `sys.version` (versión de Python en uso), `sys.platform` (sistema operativo). Un módulo propio no es más que un fichero `.py` con funciones y/o constantes definidas dentro, que se importa igual que uno de la biblioteca estándar — agrupar así funciones reutilizables por ámbito de aplicación evita reescribir el mismo código en cada programa nuevo.
+
 ## Funciones que modifican una lista
 Si una función modifica el contenido de una [[conceptos/listas-python|lista]] recibida por parámetro, **no es necesario retornarla**: las listas se modifican "in place" (la lista original cambia).
 
@@ -79,6 +86,9 @@ En lenguaje algorítmico se distinguen dos tipos de subprogramas (Python no hace
 - **Variable global**: declarada en el programa principal; accesible desde todos los subprogramas.
 - **Efectos laterales**: cuando un subprograma modifica algo fuera de su ámbito (típicamente una variable global) sin pasar por su lista de parámetros. Se consideran mala práctica — dificultan la independencia y depuración de los módulos. Regla general: toda comunicación entre un subprograma y el resto del programa debería pasar por parámetros, no por variables globales.
 
+### La palabra clave `global` en Python
+Python decide si una variable usada dentro de una función es local o global con una regla simple: si en algún punto del cuerpo de la función se le **asigna** un valor, Python la trata como local — aunque exista una variable global con el mismo nombre ([[fuentes/introduccion-a-la-programacion-con-python-3]]). Esto provoca `UnboundLocalError` si se intenta leer esa variable antes de asignarle un valor dentro de la función, incluso si "obviamente" ya tiene un valor global. Para forzar que una función **modifique** (no solo lea) una variable global, hay que declararlo explícitamente al principio de la función: `global nombre_variable`. Sin esta declaración, Python simplemente crea una variable local nueva con el mismo nombre, que desaparece al terminar la función, dejando la global original intacta.
+
 ## Paso de parámetros: valor vs. referencia
 - **Por valor**: el parámetro formal recibe una *copia* del valor del parámetro actual; los cambios dentro del subprograma no afectan a la variable original. Es el comportamiento de los tipos simples (int, float, bool) en Python.
 - **Por referencia** (parámetro variable): se pasa la dirección de memoria del parámetro actual; los cambios dentro del subprograma sí modifican la variable original al volver. Corresponde al comportamiento de los objetos mutables en Python (p. ej. una [[conceptos/listas-python|lista]] modificada "in place" dentro de una función — ver sección anterior).
@@ -94,6 +104,8 @@ Una función puede llamarse a sí misma — ver página dedicada [[conceptos/rec
 - [[fuentes/funciones-existentes-mm]]
 - [[fuentes/funciones-listas-mm]]
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
+- [[fuentes/introduccion-a-la-programacion-con-python-3]]
 - [[conceptos/listas-python]]
 - [[conceptos/algoritmo]]
 - [[conceptos/recursividad]]
+- [[conceptos/mutabilidad-y-referencias]]

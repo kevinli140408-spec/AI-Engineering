@@ -56,4 +56,3 @@ El número mínimo de movimientos necesarios es `2^n - 1`. Crece exponencialment
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
 - [[conceptos/recursividad]]
 - [[conceptos/pilas-y-colas]]
-- [[conceptos/algoritmos-ordenamiento]]

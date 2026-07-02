@@ -2,9 +2,9 @@
 titulo: "Variable (Programación)"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-06-30
+actualizado: 2026-07-01
 tags: [variables, tipos-de-datos, python]
-fuentes: [algoritmos-secuenciales-mm, guia-estudio-algoritmia-mm, joyanes-aguilar-fundamentos-de-programacion]
+fuentes: [algoritmos-secuenciales-mm, guia-estudio-algoritmia-mm, joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
 ---
 
 # Variable (Programación)
@@ -56,10 +56,23 @@ Líneas no procesadas por el intérprete, usadas como documentación. En Python:
 ## Equivalente en pseudocódigo algorítmico
 En notación independiente del lenguaje (Joyanes Aguilar), los tipos básicos son **entero**, **real**, **lógico** y **carácter/cadena**, declarados explícitamente (`var entero: Edad`) a diferencia del tipado dinámico de Python. Tablas de operadores, precedencia y funciones internas en [[conceptos/operadores-y-expresiones]].
 
+## La asignación no es una ecuación
+Aunque `x = x + 1` parezca una ecuación sin solución (`0 = 1`), una asignación en Python (y en la mayoría de lenguajes imperativos) es una **acción en dos pasos**, no una igualdad matemática ([[fuentes/introduccion-a-la-programacion-con-python-3]]): (1) se evalúa primero la expresión de la derecha del `=` usando el valor *actual* de las variables involucradas, y (2) el resultado se guarda en la variable de la izquierda, sobrescribiendo su valor anterior. Confundir `=` (asignación) con `==` (comparación de igualdad) es un error frecuente al empezar a programar.
+
+## Modelo de memoria de una asignación
+Al asignar un valor a una variable que no existía, Python reserva un espacio en memoria, almacena el valor y crea una asociación entre el identificador y la dirección de memoria de ese espacio — de ahí que una variable "recuerde" siempre el último valor asignado, hasta la siguiente asignación.
+
+## Variables no inicializadas
+A diferencia de otros lenguajes, en Python la primera operación sobre una variable debe ser necesariamente una asignación: usar una variable sin haberla inicializado antes produce la excepción `NameError` ("name '...' is not defined"). No existen variables "vacías" o con valor por defecto implícito.
+
+## Reglas de identificadores (detalle Python)
+Un identificador se forma con letras (de cualquier alfabeto — `π` es válido), dígitos y guion bajo `_`, sin poder empezar por un dígito, y no puede coincidir con una palabra reservada. Python distingue mayúsculas de minúsculas (`area`, `Area` y `AREA` son tres identificadores distintos). Palabras reservadas de Python 3: `and, as, assert, break, class, continue, def, del, elif, else, except, False, finally, for, from, global, if, import, in, is, lambda, nonlocal, None, not, or, pass, raise, return, True, try, with, while, yield`.
+
 ## Referencias
 
 - [[fuentes/algoritmos-secuenciales-mm]]
 - [[fuentes/guia-estudio-algoritmia-mm]]
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
+- [[fuentes/introduccion-a-la-programacion-con-python-3]]
 - [[entidades/python]]
 - [[conceptos/operadores-y-expresiones]]

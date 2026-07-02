@@ -2,9 +2,9 @@
 titulo: "Recursividad"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-06-30
+actualizado: 2026-07-01
 tags: [recursividad, funciones, algoritmia]
-fuentes: [joyanes-aguilar-fundamentos-de-programacion]
+fuentes: [joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
 ---
 
 # Recursividad
@@ -66,9 +66,23 @@ Las llamadas recursivas se gestionan con una estructura de [[conceptos/pilas-y-c
 ## Problemas clásicos resueltos con recursividad
 Además de factorial y Fibonacci, el libro desarrolla varios casos de referencia: el problema de las [[conceptos/torres-de-hanoi|Torres de Hanoi]] (el ejemplo arquetípico de "divide y vencerás"), la búsqueda binaria recursiva (ver [[conceptos/algoritmos-busqueda]]), y las versiones recursivas de quicksort y mergesort (ver [[conceptos/algoritmos-ordenamiento]]).
 
+### El algoritmo de Euclides (MCD), formulado recursivamente
+```python
+def mcd(a, b):
+    if b == 0:
+        return a
+    else:
+        return mcd(b, a % b)
+```
+Es el mismo algoritmo descrito en [[conceptos/algoritmo]] (origen histórico, Euclides, siglo III a.C.), pero expresado directamente como recursión: el caso base es `b == 0` (entonces `a` es el MCD), y el caso recursivo reduce el problema aplicando la misma operación al resto de la división entera — un ejemplo limpio de cómo un algoritmo formulado originalmente de forma iterativa admite una expresión recursiva casi idéntica a su definición matemática ([[fuentes/introduccion-a-la-programacion-con-python-3]]).
+
+### Fractales: el copo de nieve de Von Koch
+Ejemplo que combina recursividad con [[conceptos/graficos-de-tortuga|gráficos de tortuga]]: una figura fractal donde cada segmento se sustituye recursivamente por una versión más pequeña de un patrón (un "pico" triangular), hasta una profundidad de recursión dada. Ilustra que la recursividad no se limita a cálculos numéricos: también estructura de forma natural procesos gráficos autosimilares.
+
 ## Referencias
 
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
+- [[fuentes/introduccion-a-la-programacion-con-python-3]]
 - [[conceptos/funciones-programacion]]
 - [[conceptos/estructura-iterativa]]
 - [[conceptos/algoritmo]]
@@ -76,3 +90,4 @@ Además de factorial y Fibonacci, el libro desarrolla varios casos de referencia
 - [[conceptos/torres-de-hanoi]]
 - [[conceptos/algoritmos-busqueda]]
 - [[conceptos/algoritmos-ordenamiento]]
+- [[conceptos/graficos-de-tortuga]]

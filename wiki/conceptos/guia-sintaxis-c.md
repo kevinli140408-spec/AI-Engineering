@@ -9,7 +9,7 @@ fuentes: [joyanes-aguilar-fundamentos-de-programacion]
 
 # Guía de Sintaxis del Lenguaje C
 
-Referencia de elementos sintácticos propios de **C** que no quedan cubiertos por las páginas conceptuales generales del pseudocódigo — complementa [[conceptos/lenguaje-algoritmico-upsam]] con lo específico del lenguaje C (desarrollado en Bell Laboratories) para quien traduce algoritmos a código real.
+Referencia de elementos sintácticos propios de [[entidades/lenguaje-c|C]] que no quedan cubiertos por las páginas conceptuales generales del pseudocódigo — complementa [[conceptos/lenguaje-algoritmico-upsam]] con lo específico del lenguaje C (desarrollado en Bell Laboratories) para quien traduce algoritmos a código real.
 
 ## Estructura de un archivo fuente
 Orden convencional: comentarios (`/* */`) → directivas de preprocesador → declaraciones globales de variables/funciones → definiciones (cuerpos) de funciones. Programa mínimo:
@@ -63,3 +63,4 @@ Sintaxis equivalente a las estructuras algorítmicas ya vistas ([[conceptos/estr
 - [[conceptos/estructuras-registros]]
 - [[conceptos/listas-enlazadas]]
 - [[conceptos/estilo-y-documentacion]]
+- [[entidades/lenguaje-c]]

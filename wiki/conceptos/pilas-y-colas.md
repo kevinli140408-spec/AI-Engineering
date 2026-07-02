@@ -2,9 +2,9 @@
 titulo: "Pilas y Colas (Stack, Queue, Bicola)"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-06-30
+actualizado: 2026-07-01
 tags: [pilas, colas, stack, queue, estructuras-dinamicas, algoritmia]
-fuentes: [joyanes-aguilar-fundamentos-de-programacion]
+fuentes: [joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
 ---
 
 # Pilas y Colas (Stack, Queue, Bicola)
@@ -30,8 +30,13 @@ Generaliza la cola permitiendo inserción **y** eliminación por **ambos extremo
 - Pila: una `list` nativa ya sirve — `append()`/`pop()` operan sobre el final en O(1).
 - Cola / doble cola: `collections.deque` implementa exactamente esta estructura, con `append()`/`appendleft()`/`pop()`/`popleft()` en O(1) por ambos extremos — evita el costo O(n) de `list.pop(0)` para simular una cola con una lista común.
 
+## Cola de prioridad, como ejercicio de clase (POO)
+[[fuentes/introduccion-a-la-programacion-con-python-3]] usa la cola de prioridad como ejercicio para practicar la definición de clases desde cero (ver [[conceptos/programacion-orientada-a-objetos]]): una `class ColaPrioridad` con `__init__`, `inserta`, `primero`, `extrae`, `tamaño` y `es_vacía`, implementada internamente con una lista desordenada donde `extrae` recorre todos los elementos para encontrar el de mayor prioridad — una solución simple pero ineficiente (O(n) por extracción), a modo de introducción. En la práctica, la biblioteca estándar de Python resuelve esto de forma mucho más eficiente con el módulo `heapq` (montículo binario, O(log n) por inserción/extracción).
+
 ## Referencias
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
+- [[fuentes/introduccion-a-la-programacion-con-python-3]]
 - [[conceptos/listas-enlazadas]]
 - [[conceptos/listas-python]]
 - [[conceptos/recursividad]]
+- [[conceptos/programacion-orientada-a-objetos]]

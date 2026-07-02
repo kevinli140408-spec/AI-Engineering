@@ -22,7 +22,7 @@ Un **invariante** — condición que debe mantenerse verdadera en cada iteració
 - Por eso, en la práctica de la industria, la verificación formal se usa como **complemento** de las pruebas dinámicas (caja negra/caja blanca), no como reemplazo — se reserva típicamente para componentes críticos (seguridad, sistemas embebidos, protocolos) donde el costo de un error es inaceptablemente alto.
 
 ## Relación con Dijkstra
-La idea de razonar sobre programas con precondiciones/postcondiciones como axiomas lógicos proviene del trabajo de **Edsger W. Dijkstra** y de la lógica de Hoare (tripletas `{P} S {Q}`), la misma tradición intelectual que motivó su crítica a la sentencia `goto` (ver [[conceptos/estructura-condicional]]) y su frase, citada en [[conceptos/depuracion-y-pruebas]], de que las pruebas nunca prueban la ausencia de errores — ver también [[conceptos/algoritmo-de-dijkstra]].
+La idea de razonar sobre programas con precondiciones/postcondiciones como axiomas lógicos proviene del trabajo de [[entidades/edsger-dijkstra|Edsger W. Dijkstra]] y de la lógica de Hoare (tripletas `{P} S {Q}`), la misma tradición intelectual que motivó su crítica a la sentencia `goto` (ver [[conceptos/estructura-condicional]]) y su frase, citada en [[conceptos/depuracion-y-pruebas]], de que las pruebas nunca prueban la ausencia de errores — ver también [[conceptos/algoritmo-de-dijkstra]].
 
 ## Referencias
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
@@ -30,3 +30,4 @@ La idea de razonar sobre programas con precondiciones/postcondiciones como axiom
 - [[conceptos/principios-diseno-software]]
 - [[conceptos/estructura-condicional]]
 - [[conceptos/algoritmo-de-dijkstra]]
+- [[entidades/edsger-dijkstra]]

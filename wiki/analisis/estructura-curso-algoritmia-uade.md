@@ -64,3 +64,4 @@ El curso avanza de lo abstracto a lo concreto:
 - [[fuentes/funciones-existentes-mm]] | [[fuentes/resumen-clase5-mm]] | [[fuentes/cadenas-caracteres-mm]]
 - [[fuentes/taller-listas-mm]] | [[fuentes/funciones-listas-mm]] | [[fuentes/listas-python-mm]]
 - [[fuentes/orden-busqueda-mm]] | [[fuentes/guia-estudio-algoritmia-mm]]
+- [[analisis/estructura-libro-marzal-python3]]

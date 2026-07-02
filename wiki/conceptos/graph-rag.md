@@ -31,7 +31,7 @@ Ejemplo de query que RAG falla pero GraphRAG maneja bien:
 - Las relaciones adicionales se infieren por co-ocurrencia semántica
 
 ### 2. Detección de Comunidades
-- Se aplica el **algoritmo Leiden** sobre el grafo para agrupar entidades fuertemente relacionadas en **comunidades**
+- Se aplica el [[conceptos/algoritmo-leiden|algoritmo Leiden]] sobre el grafo para agrupar entidades fuertemente relacionadas en **comunidades**
 - Las comunidades son jerárquicas: van de muy específicas (nivel bajo) a muy temáticas (nivel alto)
 - Para cada comunidad, el LLM genera un **resumen** de manera anticipada (antes de cualquier query)
 
@@ -75,6 +75,7 @@ Microsoft publicó GraphRAG como proyecto open source en **julio 2024**, superan
 
 ## Referencias
 
+- [[conceptos/algoritmo-leiden]]
 - [Microsoft Research: Project GraphRAG](https://www.microsoft.com/en-us/research/project/graphrag/)
 - [Paper original: From Local to Global (arXiv 2404.16130)](https://arxiv.org/abs/2404.16130)
 - [IBM: What is GraphRAG?](https://www.ibm.com/think/topics/graphrag)

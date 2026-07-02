@@ -12,13 +12,13 @@ fuentes: [joyanes-aguilar-fundamentos-de-programacion]
 Un **paradigma de programación** es un enfoque fundamental para construir soluciones de software; determina cómo se estructura un [[conceptos/algoritmo|algoritmo]] al expresarlo en un [[conceptos/lenguajes-de-programacion|lenguaje de programación]].
 
 ## Imperativo (procedimental)
-Enfoque tradicional: una secuencia de instrucciones/órdenes que manipulan datos para producir resultados, ejecutadas una por una salvo saltos de control. Lenguajes: FORTRAN, COBOL, Pascal, BASIC, C, Ada.
+Enfoque tradicional: una secuencia de instrucciones/órdenes que manipulan datos para producir resultados, ejecutadas una por una salvo saltos de control. Lenguajes: FORTRAN, COBOL, Pascal, BASIC, [[entidades/lenguaje-c|C]], Ada.
 
 ## Declarativo
 El programador describe **qué** problema resolver, no **cómo** resolverlo paso a paso; se basa en lógica formal y cálculo de predicados de primer orden. Lenguaje por excelencia: Prolog.
 
 ## Orientado a objetos (POO)
-Modela el problema como objetos que combinan datos y operaciones, por analogía con el mundo real. Sus tres propiedades clave: **encapsulamiento, herencia y polimorfismo**. Se origina en los Tipos Abstractos de Datos (TAD) — tema que retoma el libro en los capítulos 15-17 (pendientes de ingesta). Lenguajes: Smalltalk, C++, Java, C#.
+Modela el problema como objetos que combinan datos y operaciones, por analogía con el mundo real. Sus tres propiedades clave: **encapsulamiento, herencia y polimorfismo**. Se origina en los Tipos Abstractos de Datos (TAD) — tema que retoma el libro en los capítulos 15-17 (pendientes de ingesta). Lenguajes: Smalltalk, [[entidades/lenguaje-c|C++]], Java, C#.
 
 ## Funcional
 Basado en funciones matemáticas puras, sin estado mutable. Lenguajes: Lisp, Haskell.
@@ -39,3 +39,4 @@ Basado en funciones matemáticas puras, sin estado mutable. Lenguajes: Lisp, Has
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
 - [[conceptos/lenguajes-de-programacion]]
 - [[conceptos/algoritmo]]
+- [[entidades/lenguaje-c]]

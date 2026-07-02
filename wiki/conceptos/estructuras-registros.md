@@ -2,9 +2,9 @@
 titulo: "Estructuras (Registros), Uniones y Enumeraciones"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-06-30
+actualizado: 2026-07-01
 tags: [estructuras, registros, uniones, enumeraciones, estructuras-de-datos, algoritmia]
-fuentes: [joyanes-aguilar-fundamentos-de-programacion]
+fuentes: [joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
 ---
 
 # Estructuras (Registros), Uniones y Enumeraciones
@@ -45,7 +45,12 @@ enum Dias {LUNES, MARTES, MIERCOLES, JUEVES, VIERNES, SABADO, DOMINGO}
 ```
 Un tipo **enumerado** define una variable cuyos valores posibles son una lista cerrada de constantes con nombre (internamente representadas como enteros consecutivos, 0, 1, 2...). Mejora la legibilidad frente a usar números "mágicos" sueltos (`dia = 1` vs. `dia = LUNES`). Se puede usar en asignaciones, comparaciones, estructuras `según_sea` (`switch`) y como contador de un bucle `desde`. Python no tiene `enum` como palabra reservada del lenguaje base (existe el módulo `enum.Enum` de la librería estándar, fuera del alcance de este curso).
 
+## Equivalente dinámico en Python: diccionarios
+Python no tiene una declaración de tipo "registro" con campos fijos como parte del lenguaje base (más allá de definir una [[conceptos/programacion-orientada-a-objetos|clase]]); el equivalente más directo y de uso más frecuente para agrupar datos con nombre es el [[conceptos/diccionarios-python|diccionario]] (`dict`), con la diferencia de que sus claves no están fijadas de antemano — se pueden añadir o quitar en cualquier momento.
+
 ## Referencias
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
+- [[fuentes/introduccion-a-la-programacion-con-python-3]]
 - [[conceptos/arrays-vectores-matrices]]
 - [[conceptos/algoritmo]]
+- [[conceptos/diccionarios-python]]

@@ -23,7 +23,7 @@ Es un algoritmo **voraz** (greedy): en cada paso toma la decisión localmente ó
 Una implementación eficiente típicamente usa una **cola de prioridad** (min-heap) para seleccionar rápidamente el vértice de menor distancia en cada iteración, y la [[conceptos/grafos|lista o matriz de adyacencia]] del grafo para recorrer los vecinos — conectando este algoritmo con las estructuras vistas en árboles y grafos del libro.
 
 ## Por qué su nombre aparece también fuera de grafos
-El apellido de su creador, **Edsger W. Dijkstra**, reaparece en el wiki en otro contexto: la crítica clásica a la sentencia `goto` (mencionada en [[conceptos/estructura-condicional]]) y la frase citada en [[conceptos/depuracion-y-pruebas]] sobre que "las pruebas muestran la presencia de errores, nunca pueden demostrar su ausencia" son también suyas — fue una figura central en la fundación de la programación estructurada y la [[conceptos/verificacion-formal|verificación formal]] de programas.
+El apellido de su creador, [[entidades/edsger-dijkstra|Edsger W. Dijkstra]], reaparece en el wiki en otro contexto: la crítica clásica a la sentencia `goto` (mencionada en [[conceptos/estructura-condicional]]) y la frase citada en [[conceptos/depuracion-y-pruebas]] sobre que "las pruebas muestran la presencia de errores, nunca pueden demostrar su ausencia" son también suyas — fue una figura central en la fundación de la programación estructurada y la [[conceptos/verificacion-formal|verificación formal]] de programas.
 
 ## Referencias
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
@@ -31,3 +31,4 @@ El apellido de su creador, **Edsger W. Dijkstra**, reaparece en el wiki en otro 
 - [[conceptos/estructura-condicional]]
 - [[conceptos/depuracion-y-pruebas]]
 - [[conceptos/verificacion-formal]]
+- [[entidades/edsger-dijkstra]]

@@ -4,7 +4,7 @@ tipo: concepto
 creado: 2026-06-30
 actualizado: 2026-06-30
 tags: [ordenamiento, algoritmos, listas, python]
-fuentes: [orden-busqueda-mm, joyanes-aguilar-fundamentos-de-programacion]
+fuentes: [orden-busqueda-mm, joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
 ---
 
 # Algoritmos de Ordenamiento

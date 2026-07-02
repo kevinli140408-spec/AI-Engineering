@@ -4,7 +4,7 @@ tipo: concepto
 creado: 2026-06-30
 actualizado: 2026-07-01
 tags: [metodologia, diseno-descendente, programacion-modular, programacion-estructurada]
-fuentes: [joyanes-aguilar-fundamentos-de-programacion]
+fuentes: [joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
 ---
 
 # Metodología de la Programación

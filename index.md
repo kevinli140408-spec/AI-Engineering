@@ -33,15 +33,21 @@
 - [[fuentes/orden-busqueda-mm]] — Métodos de ordenamiento (selección, burbujeo, inserción) y búsqueda (2026-06-30)
 - [[fuentes/guia-estudio-algoritmia-mm]] — Guía de estudio integral de Algoritmia, 48 páginas (2026-06-30)
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]] — Libro de texto Fundamentos de Programación, 802 págs., ingesta completa: 18 capítulos + 4 apéndices (2026-06-30 a 2026-07-01)
+- [[fuentes/introduccion-a-la-programacion-con-python-3]] — Libro de texto Marzal/Gracia/García (UJI), 408 págs., ingesta completa: 8 capítulos (2026-07-01)
 
 ## Entidades
 - [[entidades/obsidian]] — Editor de notas markdown con enlaces bidireccionales
 - [[entidades/uade]] — Universidad Argentina de la Empresa
 - [[entidades/python]] — Lenguaje de programación interpretado, alto nivel, multiparadigma
 - [[entidades/guido-van-rossum]] — Creador del lenguaje Python
+- [[entidades/java]] — Lenguaje de programación híbrido (bytecode + JVM), comparado con Python
 - [[entidades/tim-berners-lee]] — Creador de la World Wide Web (HTML, HTTP, URL) en el CERN
 - [[entidades/omg]] — Consorcio que estandariza UML, CORBA y MDA
 - [[entidades/tres-amigos-uml]] — Rumbaugh, Jacobson y Booch, unificadores de UML
+- [[entidades/edsger-dijkstra]] — Algoritmo del camino más corto, crítica al `goto`, verificación formal
+- [[entidades/john-von-neumann]] — Propuesta del programa almacenado (arquitectura Von Neumann)
+- [[entidades/lenguaje-c]] — C y C++: lenguaje imperativo de bajo nivel y su extensión orientada a objetos
+- [[entidades/w3c]] — Consorcio que estandariza HTML, CSS y XML; fundado por Tim Berners-Lee
 
 ## Conceptos
 - [[conceptos/retrieval-augmented-generation]] — Arquitectura que combina LLMs con recuperación de documentos externos
@@ -120,9 +126,15 @@
 - [[conceptos/algoritmo-de-dijkstra]] — Camino más corto en grafos ponderados no negativos; enfoque voraz
 - [[conceptos/recoleccion-de-basura]] — Gestión automática de memoria: conteo de referencias, mark-and-sweep, generacional
 - [[conceptos/verificacion-formal]] — Demostración matemática de corrección vía precondiciones/postcondiciones e invariantes
+- [[conceptos/graficos-de-tortuga]] — Módulo turtle: gráficos con lápiz virtual, origen en el lenguaje Logo
+- [[conceptos/mutabilidad-y-referencias]] — Objetos mutables/inmutables, `is` vs. `==`, aliasing en listas y objetos
+- [[conceptos/conjuntos-python]] — Tipo `set` nativo y su implementación manual como ejercicio de clases
+- [[conceptos/diccionarios-python]] — Correspondencia clave-valor: creación, consulta, recorrido, borrado
+- [[conceptos/algoritmo-leiden]] — Detección de comunidades en grafos; mejora sobre Louvain, usado en GraphRAG
 
 ## Análisis
 - [[analisis/estructura-curso-algebra-geometria-uade]] — Síntesis y mapa del curso de Álgebra y Geometría (UADE)
 - [[analisis/estructura-curso-pensamiento-critico-uade]] — Síntesis y mapa del curso de Pensamiento Crítico y Comunicación (UADE)
 - [[analisis/estructura-curso-algoritmia-uade]] — Síntesis y mapa del curso de Fundamentos de Informática / Algoritmia (UADE)
 - [[analisis/estructura-libro-joyanes-fundamentos-programacion]] — Mapa completo del libro Joyanes Aguilar (6 bloques) y contraste con el alcance del curso UADE
+- [[analisis/estructura-libro-marzal-python3]] — Mapa completo del libro Marzal et al. (4 bloques) y contraste con Joyanes y el curso UADE

@@ -2,9 +2,9 @@
 titulo: "Algoritmo"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-06-30
+actualizado: 2026-07-01
 tags: [algoritmo, pseudocodigo, diagramas-de-flujo]
-fuentes: [pensamiento-computacional-mm, guia-estudio-algoritmia-mm, joyanes-aguilar-fundamentos-de-programacion]
+fuentes: [pensamiento-computacional-mm, guia-estudio-algoritmia-mm, joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
 ---
 
 # Algoritmo
@@ -54,12 +54,25 @@ Comentarios: `//` (línea) o `/* */` (multilínea) en notación tipo C; `{ }` en
 ## Algoritmo vs. lenguaje vs. computadora
 > "En la ciencia de la computación y en la programación, los algoritmos son más importantes que los lenguajes de programación o las computadoras." (Joyanes Aguilar)
 
-Un lenguaje de programación es solo un medio para expresar un algoritmo; la computadora es solo el procesador que lo ejecuta.
+Un lenguaje de programación es solo un medio para expresar un algoritmo; la computadora es solo el procesador que lo ejecuta. Un algoritmo es **independiente del lenguaje**: describe un procedimiento que puede implementarse en cualquier lenguaje de propósito general, o incluso ejecutarse a mano con lápiz y papel ([[fuentes/introduccion-a-la-programacion-con-python-3]]).
+
+## Las 5 propiedades formales de un algoritmo
+No cualquier procedimiento paso a paso es un algoritmo. Marzal, Gracia y García ([[fuentes/introduccion-a-la-programacion-con-python-3]]) formalizan la definición con la analogía de una receta de cocina (freír un huevo) para mostrar, por eliminación, qué falla en una receta mal escrita:
+
+1. **Entrada**: cero o más datos de entrada (los "ingredientes" — deben ser precisos: ¿qué tipo de huevo?, ¿cuánta sal?).
+2. **Salida**: uno o más datos de salida como resultado (la "presentación" del plato).
+3. **Precisión**: cada paso debe estar definido con exactitud, sin ambigüedad (no vale "romper la cáscara con el poder de la mente"; cada paso debe ser realizable, y no debe incluir pasos irrelevantes que no acerquen al objetivo, como "sintonizar la radio").
+4. **Finitud**: debe terminar tras un número finito de pasos.
+5. **Efectividad**: cada paso debe poder ejecutarse en tiempo finito con los recursos disponibles. Una secuencia puede tener todos los pasos de duración finita y aun así no garantizar terminación en tiempo razonable (ejemplo clásico: "comprar lotería → esperar sorteo → si no ganás, repetir" es finito en cada paso pero no efectivo como método para hacerse millonario).
+
+## Origen histórico del término
+La palabra "algoritmo" proviene de **Al-Juarismi** (Abu Ja'far Mohammed ibn Mûsâ Al-Khowârizmi), matemático persa del siglo IX que introdujo el sistema de numeración hindú en el mundo árabe y, vía traducciones latinas medievales ("Dixit Algorismi..."), en Occidente. El concepto en sí es anterior: en el siglo III a.C., **Euclides** propuso en su obra *Elementos* un método sistemático para calcular el Máximo Común Divisor de dos números — el "algoritmo de Euclides", que sigue siendo el ejemplo canónico de algoritmo recursivo/iterativo bien definido.
 
 ## Referencias
 
 - [[fuentes/pensamiento-computacional-mm]]
 - [[fuentes/guia-estudio-algoritmia-mm]]
+- [[fuentes/introduccion-a-la-programacion-con-python-3]]
 - [[conceptos/pensamiento-computacional]]
 - [[conceptos/lenguajes-de-programacion]]
 - [[conceptos/metodologia-de-la-programacion]]

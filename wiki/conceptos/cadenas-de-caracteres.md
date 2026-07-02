@@ -2,9 +2,9 @@
 titulo: "Cadenas de Caracteres (Strings)"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-06-30
+actualizado: 2026-07-01
 tags: [cadenas, strings, python]
-fuentes: [cadenas-caracteres-mm, joyanes-aguilar-fundamentos-de-programacion]
+fuentes: [cadenas-caracteres-mm, joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
 ---
 
 # Cadenas de Caracteres (Strings)
@@ -80,10 +80,23 @@ A diferencia de Python (donde los strings son **inmutables** y estas operaciones
 ### Representación interna
 En C/C++, una cadena es internamente un **array de caracteres** terminado en el carácter nulo `'\0'` — ver [[conceptos/arrays-vectores-matrices]]. Otras representaciones clásicas: longitud fija (relleno con blancos), longitud variable con máximo (puntero + longitud actual), o longitud indefinida (lista enlazada de caracteres). Python abstrae completamente esta representación: el tipo `str` se gestiona internamente sin que el programador deba pensar en arrays ni en terminadores.
 
+## Cadena vs. identificador
+Error común al empezar a programar: confundir una cadena con el nombre de una variable. `a = 1` crea una variable; `'a'` es una cadena de un carácter que no tiene relación alguna con la variable `a`. Olvidar las comillas de una cadena provoca que Python la interprete como un identificador (y falle con `NameError` si no existe); poner comillas de más alrededor de un nombre de variable hace que Python la trate como texto literal en vez de evaluarla ([[fuentes/introduccion-a-la-programacion-con-python-3]]).
+
+## Conversión cadena ↔ lista
+`cadena.split(sep=' ')` parte una cadena en una lista de subcadenas usando `sep` como separador (por defecto, espacio en blanco, e ignora espacios repetidos/al borde); `separador.join(lista)` hace lo inverso: une los elementos de una lista de cadenas en una sola, intercalando `separador` entre cada uno. `list(cadena)` convierte una cadena en una lista de sus caracteres individuales. Son las herramientas más usadas para pasar de texto libre a datos estructurados y viceversa ([[fuentes/introduccion-a-la-programacion-con-python-3]]).
+
+## Secuencias de escape
+La barra invertida `\` es el **carácter de escape**: indica que el carácter siguiente tiene un significado especial en vez de literal ([[fuentes/introduccion-a-la-programacion-con-python-3]]). Las más usadas: `\n` (salto de línea), `\t` (tabulador horizontal, útil para alinear en columnas), `\\` (barra invertida literal), `\'`/`\"` (comilla literal dentro de una cadena delimitada por el mismo tipo de comilla). También existen cadenas **raw** (`r'...'`), que desactivan por completo la interpretación de escapes (útiles para rutas de archivo o expresiones regulares), y **cadenas multilínea** delimitadas con `'''...'''` o `"""..."""`. Nota histórica: Unix marca fin de línea solo con `\n`, Windows con `\r\n`, y los Macintosh clásicos usaban solo `\r` — de ahí los problemas de compatibilidad al mover archivos de texto entre sistemas operativos.
+
+## El método `format`
+`'{0} tiene {1} años'.format(nombre, edad)` interpola valores en una cadena: cada marca `{n}` se sustituye por el argumento `n`-ésimo de `format` (contando desde 0). Puede controlarse con precisión el aspecto del valor mostrado mediante una **marca de formato**: `[[relleno]alineamiento][signo][#][0][ancho][.precisión][código de tipo]`, por ejemplo `'{0:>10.2f}'.format(x)` alinea a la derecha en 10 espacios con 2 decimales. Alineamiento: `<` izquierda, `>` derecha (por defecto), `^` centrado. Códigos de tipo comunes: `b`/`o`/`x` (binario/octal/hex para enteros), `f` (punto fijo), `e` (notación exponencial), `%` (porcentaje). Las llaves literales se escapan duplicándolas: `{{` y `}}`.
+
 ## Referencias
 
 - [[fuentes/cadenas-caracteres-mm]]
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
+- [[fuentes/introduccion-a-la-programacion-con-python-3]]
 - [[entidades/python]]
 - [[conceptos/representacion-de-la-informacion]]
 - [[conceptos/arrays-vectores-matrices]]

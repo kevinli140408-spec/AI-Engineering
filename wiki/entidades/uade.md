@@ -18,7 +18,7 @@ Fuente de tres cursos completos:
 - **Pensamiento Crítico y Comunicación**: 11 presentaciones sobre [[conceptos/logica]] (proposicional, predicados) y argumentación — síntesis en [[analisis/estructura-curso-pensamiento-critico-uade]].
 - **Fundamentos de Informática (Algoritmia)**: 11 fuentes sobre [[conceptos/algoritmo|algoritmos]], [[entidades/python|Python]], estructuras de control, [[conceptos/listas-python|listas]] y [[conceptos/algoritmos-ordenamiento|ordenamiento/búsqueda]]. Dictado por la Prof. Ing. Verónica Galati — síntesis en [[analisis/estructura-curso-algoritmia-uade]].
 
-El curso utiliza recursos interactivos de GeoGebra, Flowgorithm, videoclases alojadas en Microsoft Stream, y el entorno de programación Thonny.
+El curso utiliza recursos interactivos de GeoGebra, Flowgorithm, videoclases alojadas en Microsoft Stream, y el entorno de programación Thonny (ver [[entidades/python]]).
 
 ## Mencionado en
 

@@ -2,9 +2,9 @@
 titulo: "Listas en Python"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-06-30
+actualizado: 2026-07-01
 tags: [listas, estructuras-de-datos, python]
-fuentes: [taller-listas-mm, funciones-listas-mm, listas-python-mm]
+fuentes: [taller-listas-mm, funciones-listas-mm, listas-python-mm, introduccion-a-la-programacion-con-python-3]
 ---
 
 # Listas en Python
@@ -12,7 +12,7 @@ fuentes: [taller-listas-mm, funciones-listas-mm, listas-python-mm]
 Estructura de datos que permite guardar **varios valores en una sola variable**. Cada valor ocupa una posición (**subíndice**), que siempre comienza en **0**. Las listas son **ordenadas, mutables (modificables), iterables** y admiten elementos duplicados y de **tipos mixtos**.
 
 ## ¿Por qué estructuras de datos?
-Cuando se necesitan guardar muchos valores (ej. notas de un curso), una variable por dato no alcanza. Python ofrece: `list` (listas), `tuple` (tuplas, inmutables), `set` (conjuntos), `dict` (diccionarios). Las listas son la más versátil para empezar.
+Cuando se necesitan guardar muchos valores (ej. notas de un curso), una variable por dato no alcanza. Python ofrece: `list` (listas), `tuple` (tuplas, inmutables), `set` (conjuntos — ver [[conceptos/conjuntos-python]]), `dict` (diccionarios — ver [[conceptos/diccionarios-python]]). Las listas son la más versátil para empezar.
 
 ## Operaciones básicas
 
@@ -79,12 +79,17 @@ Las listas son la estructura base sobre la que operan los [[conceptos/algoritmos
 ## Contraste: listas dinámicas vs. arrays estáticos
 La lista de Python es **dinámica** (crece/encoge en tiempo de ejecución con `append`/`insert`/`pop`/`remove`) e indexada desde 0. En pseudocódigo algorítmico clásico (lenguaje C, Pascal, etc.) la estructura equivalente es el **array**, que es de tamaño **fijo**, requiere desplazar elementos manualmente para insertar/borrar, y puede tener límites de índice arbitrarios (no necesariamente desde 0) — ver [[conceptos/arrays-vectores-matrices]].
 
+## Comparación, identidad y mutabilidad
+`==` compara listas elemento a elemento (igualdad de **valor**); `is` comprueba si dos variables apuntan al mismo objeto en memoria (igualdad de **identidad**) — dos listas pueden ser `==` sin ser `is`. Las listas son **mutables**: dos variables pueden referenciar la misma lista, y modificarla a través de una de ellas afecta a la otra (a diferencia de los tipos inmutables como `int` o `str`). Desarrollo completo, con el caso clásico del error al construir una matriz como "lista de listas", en [[conceptos/mutabilidad-y-referencias]].
+
 ## Referencias
 
 - [[fuentes/taller-listas-mm]]
 - [[fuentes/funciones-listas-mm]]
 - [[fuentes/listas-python-mm]]
+- [[fuentes/introduccion-a-la-programacion-con-python-3]]
 - [[conceptos/funciones-programacion]]
 - [[conceptos/algoritmos-busqueda]]
 - [[conceptos/algoritmos-ordenamiento]]
 - [[conceptos/arrays-vectores-matrices]]
+- [[conceptos/mutabilidad-y-referencias]]

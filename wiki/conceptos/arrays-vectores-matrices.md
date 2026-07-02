@@ -2,9 +2,9 @@
 titulo: "Arrays: Vectores y Matrices"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-06-30
+actualizado: 2026-07-01
 tags: [arrays, vectores, matrices, estructuras-de-datos, algoritmia]
-fuentes: [joyanes-aguilar-fundamentos-de-programacion]
+fuentes: [joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
 ---
 
 # Arrays: Vectores y Matrices
@@ -35,8 +35,13 @@ El orden de almacenamiento no afecta el resultado de un algoritmo correcto, pero
 ## Arrays paralelos
 Dos o más arrays de igual tamaño relacionados por un índice común (p. ej. `nombres[i]` y `edades[i]` describen a la misma persona en la posición `i`) — mismo concepto que "listas paralelas" ya documentado en [[conceptos/listas-python]].
 
+## Construir una matriz en Python: la trampa del aliasing
+Crear una matriz como lista de listas parece trivial con el operador `*` (`M = [[0]*6]*3`), pero es un error clásico: `[fila]*3` no copia la lista `fila` tres veces, sino que crea **tres referencias a la misma lista** ([[fuentes/introduccion-a-la-programacion-con-python-3]]). Modificar `M[0][0]` modifica también `M[1][0]` y `M[2][0]`, porque las tres filas son, en memoria, el mismo objeto. La forma correcta es construir cada fila por separado dentro de un bucle. Desarrollo completo del problema de fondo (mutabilidad y referencias compartidas) en [[conceptos/mutabilidad-y-referencias]].
+
 ## Referencias
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
+- [[fuentes/introduccion-a-la-programacion-con-python-3]]
 - [[conceptos/listas-python]]
 - [[conceptos/algoritmo]]
 - [[conceptos/estructuras-registros]]
+- [[conceptos/mutabilidad-y-referencias]]

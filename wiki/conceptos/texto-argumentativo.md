@@ -25,7 +25,7 @@ Texto que presenta razones para sostener una postura sobre una cuestión problem
 
 ## Tipos de argumentos utilizados
 
-- [[conceptos/razonamiento|Deductivos]]: Modus Ponens, Modus Tollens, etc.
+- [[conceptos/razonamiento|Deductivos]]: Modus Ponens, Modus Tollens, etc. (ver reglas en [[conceptos/metodo-demostrativo]])
 - [[conceptos/argumentacion-inductiva|Inductivos]]: enumeración, analogía, estadísticos.
 - Persuasivos: recursos retóricos (pueden incluir [[conceptos/falacias]]).
 

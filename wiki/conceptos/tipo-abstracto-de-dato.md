@@ -19,7 +19,7 @@ Ejemplo clásico: el TAD "Pila" especifica operaciones como `apilar`, `desapilar
 ## Por qué importa
 - **Ocultación de información**: el usuario del TAD solo necesita conocer su interfaz (las operaciones disponibles), no los detalles de almacenamiento — permite cambiar la implementación sin romper el código cliente.
 - **Reutilización**: al depender solo del contrato, un mismo TAD puede reimplementarse con distintas estructuras de datos según el contexto (eficiencia en tiempo vs. espacio).
-- **Base de la abstracción de datos**: en `principios-diseno-software`, la abstracción de datos se define precisamente como centrarse en las operaciones sobre un TAD en vez de en su representación interna (p. ej. usar `string` en C++ sin conocer cómo almacena los caracteres).
+- **Base de la abstracción de datos**: en [[conceptos/principios-diseno-software]], la abstracción de datos se define precisamente como centrarse en las operaciones sobre un TAD en vez de en su representación interna (p. ej. usar `string` en C++ sin conocer cómo almacena los caracteres).
 
 ## Ejemplos en el libro
 Los TAD más comunes tratados en capítulos de estructuras de datos son [[conceptos/pilas-y-colas|pilas y colas]] (LIFO/FIFO), [[conceptos/listas-enlazadas|listas enlazadas]], [[conceptos/arboles|árboles]] y [[conceptos/grafos]] — cada uno definido primero por su comportamiento y luego implementado con arrays, punteros o registros.

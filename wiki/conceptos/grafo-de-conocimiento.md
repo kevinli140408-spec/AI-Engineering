@@ -32,7 +32,7 @@ En el contexto de GraphRAG, el grafo se construye automáticamente:
 1. Un LLM (ej. GPT-4) lee los documentos fuente
 2. Extrae entidades nombradas y las relaciones entre ellas
 3. Las relaciones adicionales se infieren por co-ocurrencia y similitud semántica
-4. Se detectan comunidades de entidades relacionadas (algoritmo Leiden)
+4. Se detectan comunidades de entidades relacionadas ([[conceptos/algoritmo-leiden|algoritmo Leiden]])
 
 ## Ventaja sobre Chunks de Texto
 
@@ -47,5 +47,7 @@ Un chunk de texto captura el contexto local de un párrafo. Un grafo captura con
 
 ## Referencias
 
+- [[conceptos/graph-rag]]
+- [[conceptos/algoritmo-leiden]]
 - [IBM: What is GraphRAG?](https://www.ibm.com/think/topics/graphrag)
 - [From Local to Global: A Graph RAG Approach (paper original)](https://arxiv.org/abs/2404.16130)

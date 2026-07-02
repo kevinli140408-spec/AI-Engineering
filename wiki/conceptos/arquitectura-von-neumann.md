@@ -9,7 +9,7 @@ fuentes: [joyanes-aguilar-fundamentos-de-programacion]
 
 # Arquitectura de Von Neumann
 
-Diseño de computadora propuesto en 1945-1946 por el matemático **John von Neumann**, cuya característica definitoria es el **programa almacenado**: las instrucciones del programa y los datos que procesa residen juntos, codificados de la misma forma, en la misma memoria principal. Es el fundamento conceptual de la inmensa mayoría de las computadoras digitales actuales — ver desarrollo de sus componentes en [[conceptos/organizacion-de-computadoras]].
+Diseño de computadora propuesto en 1945-1946 por el matemático [[entidades/john-von-neumann|John von Neumann]], cuya característica definitoria es el **programa almacenado**: las instrucciones del programa y los datos que procesa residen juntos, codificados de la misma forma, en la misma memoria principal. Es el fundamento conceptual de la inmensa mayoría de las computadoras digitales actuales — ver desarrollo de sus componentes en [[conceptos/organizacion-de-computadoras]].
 
 ## Contraste histórico: antes de Von Neumann
 Máquinas anteriores como el **ENIAC** (1946) no almacenaban el programa: se "programaban" físicamente, recableando paneles y ajustando interruptores para cada nueva tarea, un proceso lento y propenso a errores. La propuesta de von Neumann — codificar las instrucciones como datos numéricos almacenados en memoria — permitió que cambiar de programa fuera tan simple como cargar otro conjunto de datos, sin tocar el hardware.
@@ -31,3 +31,4 @@ Como programa y datos comparten el mismo bus de acceso a memoria, la UCP no pued
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
 - [[conceptos/organizacion-de-computadoras]]
 - [[conceptos/lenguajes-de-programacion]]
+- [[entidades/john-von-neumann]]

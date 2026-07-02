@@ -2,9 +2,9 @@
 titulo: "Programación Orientada a Objetos (POO)"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-06-30
+actualizado: 2026-07-01
 tags: [poo, objetos, clases, herencia, polimorfismo, uml]
-fuentes: [joyanes-aguilar-fundamentos-de-programacion]
+fuentes: [joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
 ---
 
 # Programación Orientada a Objetos (POO)
@@ -46,8 +46,35 @@ A partir del Cap. 15, el libro adopta **UML** como notación estándar para diag
 ## Ciclo de vida del objeto
 La creación y destrucción de un objeto se gestiona con métodos especiales — ver [[conceptos/constructores-destructores]] para constructores, destructores y recolección de basura.
 
+## Sintaxis concreta de clases en Python
+Ejemplo mínimo ([[fuentes/introduccion-a-la-programacion-con-python-3]]):
+```python
+class Persona:
+    def __init__(self, nombre, dni, edad):
+        self.nombre = nombre
+        self.dni = dni
+        self.edad = edad
+
+    def iniciales(self):
+        return ''.join(c for c in self.nombre if c.isupper())
+
+    def __str__(self):
+        return f'{self.nombre} ({self.dni}), {self.edad} años'
+
+toni = Persona('Toni', '12345678A', 20)
+print(toni.iniciales())
+```
+- `class Nombre:` inicia la definición de un nuevo tipo. Las funciones definidas dentro de la clase se llaman **métodos**.
+- `self` es siempre el primer parámetro de todo método: al invocar `toni.iniciales()`, Python pasa automáticamente `toni` como `self` — es la forma en que un método accede a "sus propios" atributos (`self.nombre`).
+- `__init__` es el **constructor**: Python lo invoca automáticamente al crear una instancia (`Persona('Toni', ...)`) y sus asignaciones a `self.<atributo>` fijan el estado inicial del objeto.
+- `__str__` es un ejemplo de **método especial** (nombre entre dobles guiones bajos): Python lo invoca automáticamente cuando hace falta representar el objeto como cadena (p. ej. al hacer `print(objeto)`), sin que el programador lo llame explícitamente.
+
+### Objetos, referencias y copia
+Igual que con las listas, asignar un objeto a otra variable (`copia = juan`) copia solo la **referencia**, no el contenido: modificar `copia` modifica también `juan`, porque ambas apuntan al mismo objeto en memoria. Para obtener un objeto realmente independiente hace falta un método explícito de copia que construya una instancia nueva copiando cada atributo — desarrollo completo del fenómeno de fondo (mutabilidad, `is` vs. `==`) en [[conceptos/mutabilidad-y-referencias]].
+
 ## Referencias
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
+- [[fuentes/introduccion-a-la-programacion-con-python-3]]
 - [[conceptos/metodologia-de-la-programacion]]
 - [[conceptos/paradigmas-de-programacion]]
 - [[conceptos/algoritmo]]
@@ -58,3 +85,4 @@ La creación y destrucción de un objeto se gestiona con métodos especiales —
 - [[conceptos/herencia]]
 - [[conceptos/clases-abstractas]]
 - [[conceptos/tipo-abstracto-de-dato]]
+- [[conceptos/mutabilidad-y-referencias]]
