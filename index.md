@@ -34,6 +34,15 @@
 - [[fuentes/guia-estudio-algoritmia-mm]] — Guía de estudio integral de Algoritmia, 48 páginas (2026-06-30)
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]] — Libro de texto Fundamentos de Programación, 802 págs., ingesta completa: 18 capítulos + 4 apéndices (2026-06-30 a 2026-07-01)
 - [[fuentes/introduccion-a-la-programacion-con-python-3]] — Libro de texto Marzal/Gracia/García (UJI), 408 págs., ingesta completa: 8 capítulos (2026-07-01)
+- [[fuentes/teoria-sistemas-clase1-uade]] — Clase 1: intro a Teoría de Sistemas, orígenes (Bertalanffy), elementos y tipos de sistemas (2026-07-24)
+- [[fuentes/teoria-sistemas-clase2-uade]] — Clase 2: enfoque reduccionista vs. enfoque sistémico (2026-07-24)
+- [[fuentes/teoria-sistemas-clase3-uade]] — Clase 3: propiedades de los sistemas (sinergia, entropía, homeostasis, retroalimentación) (2026-07-24)
+- [[fuentes/teoria-sistemas-clase4-uade]] — Clase 4: teoría de la información, de juegos, del caos y cibernética (2026-07-24)
+- [[fuentes/teoria-sistemas-clase5-uade]] — Clase 5: organización como sistema, sistemas de información, IA organizacional (2026-07-24)
+- [[fuentes/teoria-sistemas-clase6-uade]] — Clase 6: proceso/proyecto/modelo, ingeniería de software, metodologías ágiles (2026-07-24)
+- [[fuentes/teoria-sistemas-clase7-uade]] — Clase 7: resolución de problemas, organizaciones inteligentes, intro a la Quinta Disciplina (2026-07-24)
+- [[fuentes/teoria-sistemas-clase8-uade]] — Clase 8: las 11 leyes del pensamiento sistémico de Peter Senge (2026-07-24)
+- [[fuentes/teoria-sistemas-clase9-uade]] — Clase 9: los 10 arquetipos sistémicos (2026-07-24)
 
 ## Entidades
 - [[entidades/obsidian]] — Editor de notas markdown con enlaces bidireccionales
@@ -48,6 +57,12 @@
 - [[entidades/john-von-neumann]] — Propuesta del programa almacenado (arquitectura Von Neumann)
 - [[entidades/lenguaje-c]] — C y C++: lenguaje imperativo de bajo nivel y su extensión orientada a objetos
 - [[entidades/w3c]] — Consorcio que estandariza HTML, CSS y XML; fundado por Tim Berners-Lee
+- [[entidades/ludwig-von-bertalanffy]] — Biólogo y filósofo austríaco, fundador de la Teoría General de Sistemas
+- [[entidades/peter-senge]] — Autor de "La Quinta Disciplina", pensamiento sistémico aplicado a organizaciones
+- [[entidades/van-gigch]] — Autor de referencia en la formalización del enfoque de sistemas (1978)
+- [[entidades/norbert-wiener]] — Fundador de la cibernética
+- [[entidades/claude-shannon]] — Padre de la teoría de la información
+- [[entidades/rodrigo-ferrare]] — Docente de Teoría de Sistemas en UADE
 
 ## Conceptos
 - [[conceptos/retrieval-augmented-generation]] — Arquitectura que combina LLMs con recuperación de documentos externos
@@ -131,6 +146,43 @@
 - [[conceptos/conjuntos-python]] — Tipo `set` nativo y su implementación manual como ejercicio de clases
 - [[conceptos/diccionarios-python]] — Correspondencia clave-valor: creación, consulta, recorrido, borrado
 - [[conceptos/algoritmo-leiden]] — Detección de comunidades en grafos; mejora sobre Louvain, usado en GraphRAG
+- [[conceptos/teoria-general-de-sistemas]] — TGS de Bertalanffy: totalidad, interacción, isomorfismo entre disciplinas
+- [[conceptos/sistema]] — Definición de Van Gigch, elementos, tipología de sistemas
+- [[conceptos/enfoque-reduccionista]] — Enfoque mecanicista/analítico: separar-analizar-sintetizar
+- [[conceptos/enfoque-sistemico]] — Enfoque holístico de Van Gigch, opuesto al reduccionismo
+- [[conceptos/propiedades-de-los-sistemas]] — Interacción, globalidad, feedback, entropía, homeostasis, jerarquía
+- [[conceptos/sinergia]] — "El todo es más que la suma de las partes"
+- [[conceptos/entropia-sistemica]] — Tendencia al desorden en un sistema; entropía negativa/sintropía
+- [[conceptos/homeostasis]] — Autorregulación y mantenimiento del equilibrio interno de un sistema
+- [[conceptos/retroalimentacion]] — Feedback positivo (amplifica) y negativo (revierte); retroalimentación compensadora
+- [[conceptos/recursividad-sistemica]] — Sistemas compuestos de subsistemas que a su vez son sistemas
+- [[conceptos/equifinalidad-multifinalidad]] — Mismo estado final desde distintos inicios, o distintos finales desde el mismo inicio
+- [[conceptos/teoria-de-la-informacion]] — Shannon: medición de información, compresión, codificación, criptografía
+- [[conceptos/teoria-de-juegos]] — Von Neumann: conducta óptima interdependiente; dilema del prisionero
+- [[conceptos/teoria-del-caos]] — Sistemas dinámicos sensibles a condiciones iniciales; efecto mariposa
+- [[conceptos/cibernetica]] — Wiener: control y comunicación por retroalimentación; primer y segundo orden
+- [[conceptos/organizacion-como-sistema]] — Organización como sistema socio-técnico abierto
+- [[conceptos/procesamiento-de-datos]] — De datos brutos a información útil
+- [[conceptos/sistemas-de-informacion]] — TPS/EIS/MIS/DSS; ejecución batch/online/tiempo real
+- [[conceptos/inteligencia-artificial-organizacional]] — IA, sistemas expertos, redes neuronales, IoT en organizaciones
+- [[conceptos/proceso-proyecto-modelo]] — Distinción PMI entre proceso, proyecto y modelo
+- [[conceptos/metodologias-desarrollo-software]] — Tradicional vs. ágil: Scrum, Kanban, Extreme Programming
+- [[conceptos/modelado-estructurado]] — Análisis estructurado: modelo ambiental, DFD, DER, diagrama de transición de estados
+- [[conceptos/resolucion-de-problemas]] — Tipos de problemas, métodos de solución, toma de decisiones
+- [[conceptos/organizaciones-inteligentes]] — Las 5 disciplinas de la organización que aprende (Senge)
+- [[conceptos/pensamiento-sistemico]] — Quinta disciplina integradora; principio de la palanca
+- [[conceptos/la-quinta-disciplina]] — Marco de Peter Senge: leyes, arquetipos y disciplinas
+- [[conceptos/leyes-del-pensamiento-sistemico]] — Las 11 leyes de Senge sobre el comportamiento de los sistemas
+- [[conceptos/arquetipos-sistemicos]] — Los 10 patrones de comportamiento sistémico recurrentes
+- [[conceptos/arquetipo-compensacion-proceso-demora]] — Arquetipo 1: acciones correctivas excesivas por demoras no percibidas
+- [[conceptos/arquetipo-limites-del-crecimiento]] — Arquetipo 2: proceso reforzador frenado por un proceso compensador
+- [[conceptos/arquetipo-desplazamiento-de-la-carga]] — Arquetipo 3: soluciones sintomáticas que debilitan la solución de fondo
+- [[conceptos/arquetipo-erosion-de-metas]] — Arquetipo 5: deterioro progresivo de una meta de largo plazo
+- [[conceptos/arquetipo-escalada]] — Arquetipo 6: espiral de agresividad mutua entre dos partes
+- [[conceptos/arquetipo-exito-para-quien-tiene-exito]] — Arquetipo 7: competencia por recursos limitados que favorece al que ya gana
+- [[conceptos/arquetipo-tragedia-del-terreno-comun]] — Arquetipo 8: agotamiento de un recurso común por uso individual
+- [[conceptos/arquetipo-soluciones-rapidas-que-fallan]] — Arquetipo 9: solución de corto plazo que exige repetirse indefinidamente
+- [[conceptos/arquetipo-crecimiento-y-subinversion]] — Arquetipo 10: crecimiento frenado por falta de inversión oportuna en capacidad
 
 ## Análisis
 - [[analisis/estructura-curso-algebra-geometria-uade]] — Síntesis y mapa del curso de Álgebra y Geometría (UADE)
@@ -138,3 +190,4 @@
 - [[analisis/estructura-curso-algoritmia-uade]] — Síntesis y mapa del curso de Fundamentos de Informática / Algoritmia (UADE)
 - [[analisis/estructura-libro-joyanes-fundamentos-programacion]] — Mapa completo del libro Joyanes Aguilar (6 bloques) y contraste con el alcance del curso UADE
 - [[analisis/estructura-libro-marzal-python3]] — Mapa completo del libro Marzal et al. (4 bloques) y contraste con Joyanes y el curso UADE
+- [[analisis/estructura-curso-teoria-sistemas-uade]] — Síntesis y mapa del curso de Teoría de Sistemas (UADE): de la TGS al pensamiento sistémico
