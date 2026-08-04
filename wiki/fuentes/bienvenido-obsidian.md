@@ -2,13 +2,13 @@
 titulo: "Nota de Bienvenida de Obsidian"
 tipo: fuente
 creado: 2026-06-25
-actualizado: 2026-06-25
+actualizado: 2026-07-28
 tags: [obsidian, setup]
 ---
 
 # Nota de Bienvenida de Obsidian
 
-Nota predeterminada que Obsidian genera al crear un vault nuevo.
+Nota predeterminada que [[entidades/obsidian|Obsidian]] genera al crear un vault nuevo.
 
 ## Puntos clave
 - Indica que el vault está vacío y listo para usar

@@ -43,6 +43,13 @@
 - [[fuentes/teoria-sistemas-clase7-uade]] — Clase 7: resolución de problemas, organizaciones inteligentes, intro a la Quinta Disciplina (2026-07-24)
 - [[fuentes/teoria-sistemas-clase8-uade]] — Clase 8: las 11 leyes del pensamiento sistémico de Peter Senge (2026-07-24)
 - [[fuentes/teoria-sistemas-clase9-uade]] — Clase 9: los 10 arquetipos sistémicos (2026-07-24)
+- [[fuentes/matrices-definiciones-operaciones-uade]] — Clase 1: taxonomía de matrices y producto por escalar (2026-08-03)
+- [[fuentes/determinante-matriz-inversa-uade]] — Clase 2: determinante (Sarrus, Laplace, propiedades) y matriz inversa (2026-08-03)
+- [[fuentes/sistemas-ecuaciones-lineales-uade]] — Clase 3: sistemas A·X=B, Gauss, Rouché-Frobenius, método de la inversa (2026-08-03)
+- [[fuentes/espacios-vectoriales-uade]] — Clase 4: axiomas de espacio vectorial, subespacios, base, coordenadas (2026-08-03)
+- [[fuentes/transformaciones-lineales-uade]] — Clase 5: transformaciones lineales, núcleo, imagen, teorema de la dimensión (2026-08-03)
+- [[fuentes/autovalores-autovectores-diagonalizacion-uade]] — Clase 6: autovalores, autovectores, polinomio característico, diagonalización (2026-08-03)
+- [[fuentes/matriz-cambio-base-uade]] — Clase 7: matriz de una transformación lineal en bases B,B' y cambio de base (2026-08-03)
 
 ## Entidades
 - [[entidades/obsidian]] — Editor de notas markdown con enlaces bidireccionales
@@ -63,6 +70,7 @@
 - [[entidades/norbert-wiener]] — Fundador de la cibernética
 - [[entidades/claude-shannon]] — Padre de la teoría de la información
 - [[entidades/rodrigo-ferrare]] — Docente de Teoría de Sistemas en UADE
+- [[entidades/virginia-bravo-barletta]] — Docente de Álgebra Lineal en UADE (transformaciones lineales en adelante)
 
 ## Conceptos
 - [[conceptos/retrieval-augmented-generation]] — Arquitectura que combina LLMs con recuperación de documentos externos
@@ -183,6 +191,18 @@
 - [[conceptos/arquetipo-tragedia-del-terreno-comun]] — Arquetipo 8: agotamiento de un recurso común por uso individual
 - [[conceptos/arquetipo-soluciones-rapidas-que-fallan]] — Arquetipo 9: solución de corto plazo que exige repetirse indefinidamente
 - [[conceptos/arquetipo-crecimiento-y-subinversion]] — Arquetipo 10: crecimiento frenado por falta de inversión oportuna en capacidad
+- [[conceptos/matriz]] — Arreglo rectangular; taxonomía (cuadrada, diagonal, identidad, simétrica, etc.) y traspuesta
+- [[conceptos/operaciones-con-matrices]] — Producto por escalar; suma y producto matricial (uso implícito, sin definición formal en la fuente)
+- [[conceptos/determinante]] — Función matriz→R; Sarrus, Laplace/cofactores, 10 propiedades
+- [[conceptos/matriz-inversa]] — A⁻¹ vía matriz adjunta; condición de existencia det(A)≠0
+- [[conceptos/sistema-de-ecuaciones-lineales]] — A·X=B; clasificación, rango, Rouché-Frobenius, Gauss y método de la inversa
+- [[conceptos/espacio-vectorial]] — (V,+,K,·) y sus 10 axiomas
+- [[conceptos/subespacio-vectorial]] — Condiciones de subespacio, combinación lineal, subespacio generado, complemento ortogonal
+- [[conceptos/base-de-un-espacio-vectorial]] — Independencia lineal, base, coordenadas de un vector
+- [[conceptos/transformacion-lineal]] — T:V→W; teorema fundamental, núcleo, imagen, teorema de la dimensión
+- [[conceptos/autovalores-autovectores]] — A·v=λ·v; polinomio característico, espectro, autoespacio
+- [[conceptos/diagonalizacion]] — P⁻¹AP=D; condición de diagonalizabilidad
+- [[conceptos/matriz-cambio-base]] — M(T)_BB'; caso particular de la transformación identidad
 
 ## Análisis
 - [[analisis/estructura-curso-algebra-geometria-uade]] — Síntesis y mapa del curso de Álgebra y Geometría (UADE)
@@ -191,3 +211,4 @@
 - [[analisis/estructura-libro-joyanes-fundamentos-programacion]] — Mapa completo del libro Joyanes Aguilar (6 bloques) y contraste con el alcance del curso UADE
 - [[analisis/estructura-libro-marzal-python3]] — Mapa completo del libro Marzal et al. (4 bloques) y contraste con Joyanes y el curso UADE
 - [[analisis/estructura-curso-teoria-sistemas-uade]] — Síntesis y mapa del curso de Teoría de Sistemas (UADE): de la TGS al pensamiento sistémico
+- [[analisis/estructura-curso-algebra-lineal-uade]] — Síntesis y mapa del bloque de Álgebra Lineal (UADE): matrices → espacios vectoriales → transformaciones lineales

@@ -2,7 +2,7 @@
 titulo: "UML (Unified Modeling Language)"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-06-30
+actualizado: 2026-07-28
 tags: [uml, modelado, diagramas, poo, omg]
 fuentes: [joyanes-aguilar-fundamentos-de-programacion]
 ---
@@ -29,10 +29,10 @@ Un modelo UML captura dos dimensiones de un sistema: su **estructura estática**
 Gestiona la complejidad del diseño de sistemas grandes mediante un lenguaje formal, conciso, comprensible y escalable, que encapsula "lecciones aprendidas" de décadas de ingeniería de software, respaldado como estándar por la **[[entidades/omg|OMG (Object Management Group)]]**.
 
 ## Historia
-Antes de 1994 coexistían varios métodos de modelado orientado a objetos incompatibles entre sí: **OMT** (James Rumbaugh), **OOSE** (Ivar Jacobson, con énfasis en casos de uso) y **Booch'93** (Grady Booch), además de métodos como Coad/Yourdon y Fusion. La fragmentación dificultaba la comunicación entre equipos.
+Antes de 1994 coexistían varios métodos de modelado orientado a objetos incompatibles entre sí: **OMT** ([[entidades/tres-amigos-uml|James Rumbaugh]]), **OOSE** (Ivar Jacobson, con énfasis en casos de uso) y **Booch'93** (Grady Booch), además de métodos como Coad/Yourdon y Fusion. La fragmentación dificultaba la comunicación entre equipos.
 
 - **1994**: Rumbaugh se une a Booch en Rational; comienzan a unificar OMT y Booch'93 en un borrador llamado "Unified Method" (v0.8).
-- **1995**: se les une Jacobson (autor de OOSE) — el trío pasa a conocerse como **[[entidades/tres-amigos-uml|"los tres amigos"]]**.
+- **1995**: se les une Jacobson (autor de OOSE) — el trío pasa a conocerse como **"los tres amigos"**.
 - **Enero 1997**: se publica **UML 1.0**.
 - **1997**: la **[[entidades/omg|OMG]]** adopta UML como estándar (v1.1).
 - **1998-2000**: versiones 1.2 a 1.4 (semántica de acción).

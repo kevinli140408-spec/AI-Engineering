@@ -2,7 +2,7 @@
 titulo: "Ciclo de Vida del Software"
 tipo: concepto
 creado: 2026-07-01
-actualizado: 2026-07-24
+actualizado: 2026-07-28
 tags: [ciclo-de-vida, ingenieria-de-software, modelo-en-cascada, proceso-unificado, uml]
 fuentes: [joyanes-aguilar-fundamentos-de-programacion, teoria-sistemas-clase6-uade]
 ---
@@ -35,7 +35,7 @@ Por esto el ciclo de vida real es **iterativo**, con bucles de realimentación e
 El curso de Teoría de Sistemas de [[entidades/uade]] agrupa las alternativas al modelo en cascada puro en cuatro grandes familias: **modelo cascada**, **modelo evolutivo**, **modelo espiral** y **modelo incremental** — coincidiendo con las críticas y alternativas ya descriptas arriba, pero enmarcándolas explícitamente como aplicación de la [[conceptos/proceso-proyecto-modelo|distinción entre proceso, proyecto y modelo]] a la ingeniería de software. La elección entre ellos se vincula directamente con qué [[conceptos/metodologias-desarrollo-software|metodología de gestión]] (tradicional o ágil) se adopte para el proyecto.
 
 ## El Proceso Unificado (PU / USDP)
-Basado en los trabajos de Jacobson, Booch y Rumbaugh (creadores de [[conceptos/uml|UML]]), enfatiza el desarrollo **iterativo e incremental**. Organiza el trabajo en **fases** (eje horizontal) y **flujos de trabajo** —análisis, diseño, implementación, pruebas— (eje vertical), donde cada iteración es una mini-cascada:
+Basado en los trabajos de [[entidades/tres-amigos-uml|Jacobson, Booch y Rumbaugh]] (creadores de [[conceptos/uml|UML]]), enfatiza el desarrollo **iterativo e incremental**. Organiza el trabajo en **fases** (eje horizontal) y **flujos de trabajo** —análisis, diseño, implementación, pruebas— (eje vertical), donde cada iteración es una mini-cascada:
 
 - **Incepción**: determina el ámbito y propósito del proyecto (mayor esfuerzo en requisitos).
 - **Elaboración**: captura de requisitos y estructura del sistema (comienza diseño e implementación).

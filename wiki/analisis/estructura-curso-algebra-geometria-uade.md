@@ -36,3 +36,7 @@ El álgebra del bloque 1 (ecuaciones, factorización, completar cuadrados) es pr
 ## Metodología
 
 Fuerte apoyo en **simulaciones GeoGebra** interactivas y **videoclases on demand** (Microsoft Stream). Enfoque visual-constructivo: definir lugar geométrico → derivar ecuación → resolver ejercicios.
+
+## Posible relación con otro bloque de Álgebra
+
+Existe un segundo bloque de fuentes de [[entidades/uade]] sobre matrices y álgebra lineal — ver [[analisis/estructura-curso-algebra-lineal-uade]]. Ambos comparten universidad y la etiqueta "Álgebra", pero no hay evidencia directa en las fuentes de que sean el mismo curso, un módulo posterior, o dos materias distintas. Sin confirmar con el humano.

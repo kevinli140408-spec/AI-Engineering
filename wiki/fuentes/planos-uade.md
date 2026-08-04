@@ -1,12 +1,12 @@
 ---
-titulo: "Planos, Planos y Rectas — Elementos de Álgebra y Geometría (UADE)"
+titulo: "Planos y Rectas — Elementos de Álgebra y Geometría (UADE)"
 tipo: fuente
 creado: 2026-06-29
-actualizado: 2026-06-29
+actualizado: 2026-07-28
 tags: [geometria, planos, uade]
 ---
 
-# Planos, Planos y Rectas — UADE
+# Planos y Rectas — UADE
 
 Presentación 6 del curso Elementos de Álgebra y Geometría de [[entidades/uade]].
 
