@@ -2,9 +2,9 @@
 titulo: "Estructura de Control Condicional"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-07-01
-tags: [estructuras-de-control, condicional, python, operadores-logicos]
-fuentes: [algoritmos-secuenciales-mm, control-flujo-ciclos-mm, guia-estudio-algoritmia-mm, joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
+actualizado: 2026-09-09
+tags: [estructuras-de-control, condicional, python, operadores-logicos, match-case]
+fuentes: [algoritmos-secuenciales-mm, control-flujo-ciclos-mm, guia-estudio-algoritmia-mm, joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3, programacion1-introduccion-thompson]
 ---
 
 # Estructura de Control Condicional
@@ -59,6 +59,44 @@ El bloque `else` **no es obligatorio**. La indentación delimita los bloques (no
 ## Comparación triple
 Python permite encadenar comparaciones: `1 <= nota <= 10` equivale a `nota >= 1 and nota <= 10`.
 
+## Operador condicional (ternario)
+Permite elegir entre dos valores en una sola expresión, sin escribir un bloque `if/else` completo:
+
+```python
+<var> = <valor1> if <condición> else <valor2>
+a = b if b >= 0 else -b   # valor absoluto de b
+```
+
+## Instrucción `match`-`case` (Python 3.10+)
+Desde la versión 3.10 (4 de octubre de 2021), Python incorpora `match`-`case`, similar al `switch`-`case` de C, C++, C# o Java. En algunos casos reemplaza al `if`-`elif`-`else`, aportando mayor claridad — es el equivalente directo de la **alternativa múltiple** (`según_sea`/`switch`) descrita más abajo en pseudocódigo algorítmico.
+
+```python
+match <variable>:
+    case <valor1>:
+        ...
+    case <valor2>:
+        ...
+    case _:
+        ...
+```
+
+El contenido de `<variable>` se compara contra cada `case` en orden, buscando una coincidencia; `case _:` es el caso por defecto (opcional), equivalente al `otros`/`default` del pseudocódigo.
+
+- El pipe `|` funciona como `or` dentro de un `case`: `case 1 | 2 | 3:` coincide con cualquiera de esos valores.
+- Agregar una cláusula `if` a un `case` funciona como `and` (un *guard*): `case 4 | 5 if deuda == 1:` solo coincide si además se cumple la condición.
+
+```python
+match nota:
+    case 1 | 2 | 3:
+        print("Aplazado")
+    case 4 | 5 | 6 | 7 | 8 | 9 | 10 if deuda == 1:
+        print("Aprobado")
+    case 4 | 5 | 6 | 7 | 8 | 9 | 10 if deuda == 2:
+        print("Aprobación pendiente por deuda")
+    case _:
+        print("Nota inválida")
+```
+
 ## Variantes en pseudocódigo algorítmico (Joyanes Aguilar)
 - **Alternativa simple** (`si-entonces`/`if-then`): ejecuta una acción solo si la condición es verdadera; si es falsa, no hace nada (equivale a un `if` de Python sin `else`).
 - **Alternativa doble** (`si-entonces-si_no`/`if-then-else`): equivale al `if/else` de Python.
@@ -79,6 +117,7 @@ Las negaciones combinadas con `and`/`or` son una fuente frecuente de errores par
 - [[fuentes/guia-estudio-algoritmia-mm]]
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
 - [[fuentes/introduccion-a-la-programacion-con-python-3]]
+- [[fuentes/programacion1-introduccion-thompson]]
 - [[conceptos/estructura-secuencial]]
 - [[conceptos/estructura-iterativa]]
 - [[conceptos/algoritmo-de-dijkstra]]

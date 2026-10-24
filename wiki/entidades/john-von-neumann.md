@@ -2,9 +2,9 @@
 titulo: "John von Neumann"
 tipo: entidad
 creado: 2026-07-01
-actualizado: 2026-07-24
+actualizado: 2026-08-19
 tags: [persona, hardware, historia-computacion, teoria-de-juegos]
-fuentes: [joyanes-aguilar-fundamentos-de-programacion, teoria-sistemas-clase4-uade]
+fuentes: [joyanes-aguilar-fundamentos-de-programacion, teoria-sistemas-clase4-uade, arquitectura-computadoras-clase2-uade]
 ---
 
 # John von Neumann
@@ -24,6 +24,7 @@ Von Neumann realizó contribuciones mayores en teoría de conjuntos, física cu�
 ## Referencias
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
 - [[fuentes/teoria-sistemas-clase4-uade]]
+- [[fuentes/arquitectura-computadoras-clase2-uade]]
 - [[conceptos/arquitectura-von-neumann]]
 - [[conceptos/organizacion-de-computadoras]]
 - [[conceptos/teoria-de-juegos]]

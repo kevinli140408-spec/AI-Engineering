@@ -2,9 +2,9 @@
 titulo: "Torres de Hanoi"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-06-30
+actualizado: 2026-09-09
 tags: [torres-de-hanoi, recursividad, algoritmia]
-fuentes: [joyanes-aguilar-fundamentos-de-programacion]
+fuentes: [joyanes-aguilar-fundamentos-de-programacion, programacion1-recursividad-thompson]
 ---
 
 # Torres de Hanoi
@@ -13,7 +13,7 @@ Problema clásico de origen oriental, usado tradicionalmente como el ejemplo arq
 - Solo se mueve **un disco a la vez**.
 - Nunca puede quedar un disco sobre otro **más pequeño**.
 
-El objetivo es trasladar toda la pila a la varilla final.
+El objetivo es trasladar toda la pila a la varilla final. El pasatiempo se presentó en Europa en 1883; la leyenda asociada (monjes de un templo de Brahma en la India moviendo 64 discos de oro, con el fin del mundo llegando al completar la tarea) es la que popularizó el problema como ejemplo de crecimiento exponencial.
 
 ## Por qué es recursivo
 Mover `n` discos de la varilla inicial a la final se descompone en tres subproblemas más pequeños:
@@ -54,5 +54,6 @@ El número mínimo de movimientos necesarios es `2^n - 1`. Crece exponencialment
 
 ## Referencias
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
+- [[fuentes/programacion1-recursividad-thompson]]
 - [[conceptos/recursividad]]
 - [[conceptos/pilas-y-colas]]

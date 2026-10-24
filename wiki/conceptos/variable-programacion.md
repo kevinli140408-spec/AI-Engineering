@@ -2,9 +2,9 @@
 titulo: "Variable (Programación)"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-07-01
+actualizado: 2026-09-09
 tags: [variables, tipos-de-datos, python]
-fuentes: [algoritmos-secuenciales-mm, guia-estudio-algoritmia-mm, joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
+fuentes: [algoritmos-secuenciales-mm, guia-estudio-algoritmia-mm, joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3, programacion1-introduccion-thompson, programacion1-cadenas1-thompson]
 ---
 
 # Variable (Programación)
@@ -50,6 +50,21 @@ print("Hola", nombre)                      # salida combinando texto y variable
 
 Conversión de tipos: `int()`, `float()`, `str()`.
 
+### Formato con el operador `%` (estilo antiguo)
+Además de f-strings y `.format()` (ver [[conceptos/cadenas-de-caracteres]]), Python soporta un estilo de formateo más antiguo con **especificadores de conversión** y el operador `%`:
+
+```python
+cant, precio = 10, 12.5
+print("Cantidad: %6d" % cant)     # Cantidad:     10
+print("Precio: %7.2f" % precio)   # Precio:   12.50
+print("%04d" % 3)                 # 0003  (relleno con ceros)
+print("X = %4d Y = %4d" % (x, y)) # varias variables: van entre paréntesis
+```
+
+- `%d`: entero. `%f`: real. `%s`: cadena de caracteres (también admite ancho: `"%10s" % nombre`).
+- El primer número tras `%` es el **ancho total**; el segundo (tras el punto), la **cantidad de decimales**.
+- Un `0` antes del ancho rellena con ceros en vez de espacios.
+
 ## Comentarios
 Líneas no procesadas por el intérprete, usadas como documentación. En Python: `# comentario`.
 
@@ -74,5 +89,6 @@ Un identificador se forma con letras (de cualquier alfabeto — `π` es válido)
 - [[fuentes/guia-estudio-algoritmia-mm]]
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
 - [[fuentes/introduccion-a-la-programacion-con-python-3]]
+- [[fuentes/programacion1-introduccion-thompson]]
 - [[entidades/python]]
 - [[conceptos/operadores-y-expresiones]]

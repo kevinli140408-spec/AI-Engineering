@@ -2,9 +2,9 @@
 titulo: "Python (lenguaje)"
 tipo: entidad
 creado: 2026-06-30
-actualizado: 2026-07-01
+actualizado: 2026-09-09
 tags: [python, lenguaje-de-programacion, herramienta]
-fuentes: [guia-estudio-algoritmia-mm, pensamiento-computacional-mm, introduccion-a-la-programacion-con-python-3]
+fuentes: [guia-estudio-algoritmia-mm, pensamiento-computacional-mm, introduccion-a-la-programacion-con-python-3, programacion1-introduccion-thompson]
 ---
 
 # Python (lenguaje)
@@ -32,11 +32,19 @@ El libro cita testimonios de la época para ilustrar la adopción de Python en l
 ## Instrucción print y ejecución
 `print("mensaje")` muestra texto por pantalla. Los archivos fuente tienen extensión `.py`. Se ejecutan con Run → Run current script (F5).
 
+## Versión 3.10: instrucción `match`-`case`
+A partir de Python 3.10 (octubre de 2021) se incorporó `match`-`case`, un `switch`-`case` estructural que en varios casos reemplaza al `if`-`elif`-`else` — ver el detalle sintáctico en [[conceptos/estructura-condicional]].
+
+## Otro curso de referencia
+Además de la cátedra de Algoritmia (UADE) y el libro de la UJI, esta wiki también incorpora el material de la materia "Algoritmos y Estructuras de Datos I / Programación I" a cargo del [[entidades/ricardo-thompson|Lic. Ricardo Thompson]] (institución no especificada en el material) — ver [[fuentes/programacion1-introduccion-thompson]].
+
 ## Referencias
 
 - [[fuentes/guia-estudio-algoritmia-mm]]
 - [[fuentes/pensamiento-computacional-mm]]
 - [[fuentes/introduccion-a-la-programacion-con-python-3]]
+- [[fuentes/programacion1-introduccion-thompson]]
 - [[conceptos/lenguajes-de-programacion]]
 - [[entidades/guido-van-rossum]]
 - [[entidades/java]]
+- [[entidades/ricardo-thompson]]

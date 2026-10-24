@@ -2,9 +2,9 @@
 titulo: "Archivos (Ficheros)"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-07-01
+actualizado: 2026-09-09
 tags: [archivos, ficheros, almacenamiento-secundario, algoritmia]
-fuentes: [joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
+fuentes: [joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3, programacion1-archivos-thompson]
 ---
 
 # Archivos (Ficheros)
@@ -63,13 +63,58 @@ Los tres últimos métodos cargan contenido íntegro en memoria: evitarlos con f
 ### Persistencia de estructuras de datos: el módulo `pickle`
 Guardar y recuperar una lista o un diccionario completo, dato a dato, es tedioso. El módulo `pickle` serializa cualquier estructura de datos Python directamente a un fichero binario y la reconstruye tal cual: `pickle.dump(lista, open('f.dat', 'wb'))` para guardar, `pickle.load(open('f.dat', 'rb'))` para recuperar. Es la forma más simple de que un programa "recuerde" información entre distintas ejecuciones sin diseñar un formato de texto propio.
 
+### Modo de apertura en detalle y rutas de Windows
+El modo de apertura combina un carácter básico (`r`/`w`/`a`) con un modificador opcional `t` (texto, el valor por defecto si se omite el modo completo: `open(archivo)` equivale a `"rt"`). En Windows, una ruta con barras invertidas simples puede chocar con secuencias de escape (`"c:\nuevo\datos.txt"` contiene un `\n` real, es decir un salto de línea, y produce una ruta inválida). Tres soluciones equivalentes: doble barra invertida (`"c:\\nuevo\\datos.txt"`), barra normal —Windows la acepta igual que `/` (`"c:/nuevo/datos.txt"`), o declarar la cadena como *raw* (`open(r"c:\nuevo\datos.txt", "wt")`).
+
+### Patrón try/except/finally recomendado (sin `with`)
+Como `open()` puede fallar por múltiples motivos (ruta inválida, archivo inexistente en modo `r`, disco lleno o protegido, permisos insuficientes, archivo ya abierto por otro proceso), la apertura debe ir siempre dentro de un bloque protegido — ver [[conceptos/manejo-de-excepciones]]. Encadenar excepciones de más específica a más genérica: primero `FileNotFoundError`, luego `OSError` (sinónimo `IOError`) como red de contención final. El cierre va en `finally`, envuelto a su vez en un `try`/`except NameError: pass` — porque si `open()` nunca llegó a asignar la variable (falló antes), intentar `arch.close()` lanzaría `NameError`:
+
+```python
+try:
+    arch = open("alumnos.txt", "wt")
+    # ... procesamiento ...
+except FileNotFoundError as mensaje:
+    print("No se puede abrir el archivo:", mensaje)
+except OSError as mensaje:
+    print("Error de E/S:", mensaje)
+finally:
+    try:
+        arch.close()
+    except NameError:
+        pass
+```
+
+### Delimitador de línea y conversión de datos
+Python graba `"\n"` como delimitador entre registros, pero el carácter físico depende del sistema operativo (Windows: CR+LF; Linux/Android: solo LF; macOS: solo CR) — a esta traducción automática se la llama **conversión de datos**, exclusiva de archivos de texto (no ocurre en binarios).
+
+### Formato CSV sin módulos
+Un archivo CSV (*comma-separated values*) es simplemente un archivo de texto donde cada línea tiene sus campos separados por un delimitador (coma, punto y coma, etc.); no hace falta `import csv` para leerlo o escribirlo a mano con `split()`/concatenación — el módulo estándar solo aporta comodidad extra (manejo de comillas, tipos de dato, etc.).
+
+### Indicador de posición y `seek(0)`
+El **indicador de posición** (o puntero de lectura/escritura) marca cuál es el próximo registro a leer o grabar, y avanza automáticamente con cada operación. Al terminar de leer un archivo, el indicador queda al final — volver a leerlo requiere `arch.seek(0)` (retrocede al comienzo) en vez de cerrar y reabrir el archivo (más costoso en recursos; solo se justifica si además cambia el modo de apertura).
+
+### `for` sobre un archivo vs. métodos de lectura — no combinar
+Un objeto archivo es iterable: `for linea in arch:` recorre línea por línea igual que `readline()` en un bucle, sin necesitar el método explícito. **No deben mezclarse** ambos enfoques en el mismo recorrido (alternar `for linea in arch:` con una llamada suelta a `arch.readline()`): cada uno avanza el indicador de posición de forma independiente, y combinarlos salta o pierde registros.
+
+### Regla estricta contra cargar el archivo completo en memoria
+Más allá de la recomendación general de evitar `read()`/`readlines()` con archivos grandes, esta cátedra la trata como una **prohibición absoluta**, equiparándola a un ciclo infinito por mala práctica — un archivo puede tener millones de registros. Esto también descarta patrones aparentemente inofensivos como acumular todas las líneas en una lista dentro de un `for`, o concatenarlas todas en una única cadena con un `while`.
+
+### Codificación UTF-8 explícita
+Si aparece `UnicodeDecodeError` al leer, o los caracteres regionales (`ñ`, tildes) se leen dañados, el archivo fue grabado en UTF-8 y debe abrirse indicándolo: `open("datos.txt", "rt", encoding="UTF8")`.
+
+### Buenas prácticas adicionales
+El nombre del archivo es una decisión del programador, no debe pedirse por teclado al usuario; el archivo se abre una sola vez, se procesa por completo y se cierra (nunca abrir/cerrar por cada registro); toda lectura o escritura debe operar sobre el **registro completo** (una línea), nunca campo por campo, por razones de eficiencia.
+
 ### Por qué siempre hay que cerrar el fichero
 Las lecturas/escrituras a disco pasan primero por un **buffer** en RAM (mucho más rápida que el disco); el contenido no se vuelca físicamente al disco hasta que el buffer se llena o el fichero se cierra. Un programa que termina sin cerrar un fichero corre el riesgo de perder los últimos cambios o corromper el fichero. `with open(...) as f:` es la forma recomendada precisamente porque garantiza el cierre incluso si ocurre una excepción a mitad de la operación.
 
 ## Referencias
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
 - [[fuentes/introduccion-a-la-programacion-con-python-3]]
+- [[fuentes/programacion1-archivos-thompson]]
 - [[conceptos/estructuras-registros]]
 - [[conceptos/arrays-vectores-matrices]]
 - [[conceptos/algoritmos-archivos]]
 - [[conceptos/diccionarios-python]]
+- [[conceptos/manejo-de-excepciones]]
+- [[conceptos/json]]

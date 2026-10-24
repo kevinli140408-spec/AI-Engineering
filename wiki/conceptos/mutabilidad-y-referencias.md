@@ -2,9 +2,9 @@
 titulo: "Mutabilidad, Referencias y el Operador is"
 tipo: concepto
 creado: 2026-07-01
-actualizado: 2026-07-01
+actualizado: 2026-09-09
 tags: [python, mutabilidad, referencias, memoria, listas]
-fuentes: [introduccion-a-la-programacion-con-python-3]
+fuentes: [introduccion-a-la-programacion-con-python-3, programacion1-listas2-thompson]
 ---
 
 # Mutabilidad, Referencias y el Operador `is`
@@ -45,6 +45,9 @@ for _ in range(3):
     M.append([0] * 6)   # una lista nueva en cada iteración
 ```
 
+## Copia superficial de listas (evitar el aliasing accidental)
+Cuando el objetivo es tener una lista independiente (no solo una segunda referencia), existen varias formas equivalentes de obtener una **copia superficial** (shallow copy): rebanada completa (`lista1[:]`), la función `list(lista1)`, concatenar con una lista vacía (`lista1 + []`), o el método `lista1.copy()`. La función `id(objeto)` (equivalente a la dirección de memoria) permite verificar si dos variables comparten objeto: `id(lista1) == id(lista2)` es `True` solo si son la misma referencia.
+
 ## Relación con el paso de parámetros a funciones
 Esta misma distinción explica por qué una función puede modificar una lista recibida como parámetro sin necesidad de un `return` (la función recibe una referencia al mismo objeto que existe fuera de ella), mientras que reasignar un parámetro de tipo `int`/`str` dentro de una función no afecta a la variable original — ver [[conceptos/funciones-programacion]] (paso por valor vs. por referencia).
 
@@ -53,6 +56,7 @@ El mismo fenómeno aplica a instancias de clases propias: `copia = original` cop
 
 ## Referencias
 - [[fuentes/introduccion-a-la-programacion-con-python-3]]
+- [[fuentes/programacion1-listas2-thompson]]
 - [[conceptos/listas-python]]
 - [[conceptos/arrays-vectores-matrices]]
 - [[conceptos/variable-programacion]]

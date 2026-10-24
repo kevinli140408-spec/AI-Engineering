@@ -2,9 +2,9 @@
 titulo: "Organización de una Computadora"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-06-30
+actualizado: 2026-08-19
 tags: [hardware, arquitectura-von-neumann, memoria, procesador]
-fuentes: [joyanes-aguilar-fundamentos-de-programacion]
+fuentes: [joyanes-aguilar-fundamentos-de-programacion, arquitectura-computadoras-clase2-uade]
 ---
 
 # Organización de una Computadora
@@ -18,6 +18,7 @@ Diseño propuesto en 1946 por [[entidades/john-von-neumann|John von Neumann]]: e
 2. **Unidad Central de Proceso (UCP/CPU)**, compuesta por:
    - **Unidad de Control (UC)**: dirige la ejecución de instrucciones.
    - **Unidad Aritmético-Lógica (UAL)**: realiza cálculos y comparaciones.
+   - Desarrollo detallado de registros, caché y reloj en [[conceptos/componentes-de-la-cpu]].
 3. **Memoria principal (central)** — almacenamiento de trabajo, rápido pero volátil.
 4. **Memoria secundaria (externa)** — almacenamiento masivo, permanente.
 5. **Dispositivos de salida** — monitor, impresora...
@@ -42,7 +43,9 @@ Cada posición de memoria (**celda**) tiene una **dirección** única y un **con
 No volátil; conserva datos y programas aunque se apague la computadora. Tecnologías: discos magnéticos (discos duros), discos ópticos (CD/DVD) y memorias flash/USB. Los datos se organizan en **archivos (ficheros)**, tema que retoma el libro en el capítulo 9 (pendiente de ingesta).
 
 ## Dispositivos de Entrada/Salida (periféricos)
-Permiten la comunicación usuario-computadora. Se conectan mediante **buses** (canales de datos) y **conectores/puertos**: USB (Universal Serial Bus, el más extendido) y Firewire (IEEE 1394, alta velocidad).
+Permiten la comunicación usuario-computadora. Se conectan mediante **buses** (canales de datos) y **conectores/puertos**: USB (Universal Serial Bus, el más extendido) y Firewire (IEEE 1394, alta velocidad) — desarrollo completo de los buses internos (datos/direcciones/control) y externos (PCIe, SATA) en [[conceptos/buses-de-sistema]].
+
+Nota sobre unidades: KB/MB/GB de la tabla anterior son la convención comercial en base 10; el sistema operativo suele medir en potencias exactas de 2 (KiB=1024 bytes), lo que explica por qué un disco de "1TB" muestra menos espacio real — ver [[conceptos/sistemas-de-numeracion]].
 
 ## Clasificación de computadoras
 De menor a mayor capacidad de proceso: personales (PC), estaciones de trabajo, servidores, minicomputadoras, mainframes (grandes computadoras) y supercomputadoras (múltiples procesadores en paralelo; uso científico/militar).
@@ -55,8 +58,12 @@ El **sistema operativo** asigna memoria, gestiona dispositivos de E/S y planific
 
 ## Referencias
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
+- [[fuentes/arquitectura-computadoras-clase2-uade]]
 - [[conceptos/lenguajes-de-programacion]]
 - [[conceptos/representacion-de-la-informacion]]
 - [[conceptos/redes-y-web]]
 - [[conceptos/arquitectura-von-neumann]]
+- [[conceptos/componentes-de-la-cpu]]
+- [[conceptos/buses-de-sistema]]
+- [[conceptos/sistemas-de-numeracion]]
 - [[entidades/john-von-neumann]]

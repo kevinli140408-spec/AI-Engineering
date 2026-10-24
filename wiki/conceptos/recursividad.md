@@ -2,9 +2,9 @@
 titulo: "Recursividad"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-07-01
+actualizado: 2026-09-09
 tags: [recursividad, funciones, algoritmia]
-fuentes: [joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
+fuentes: [joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3, programacion1-recursividad-thompson]
 ---
 
 # Recursividad
@@ -56,6 +56,51 @@ fin_función
 ```
 Esta definición es simple de escribir pero **ineficiente**: cada llamada genera otras dos, por lo que el número de llamadas crece exponencialmente (se recalculan los mismos subproblemas muchas veces).
 
+## Caso base y caso recursivo (terminología)
+En cada función recursiva se distinguen dos ramas: el **caso recursivo** (donde ocurre la llamada a sí misma; suele ejecutarse la mayoría de las veces) y el **caso base** (la salida no recursiva; suele ser único o limitado a pocas alternativas). Si el caso base nunca se alcanza — p. ej. invocar `factorial(-1)`, donde `n` nunca llega a `0` porque decrece indefinidamente — Python agota la pila de llamadas y lanza `RecursionError: maximum recursion depth exceeded`.
+
+## El "teorema fundamental" de recursión/iteración
+Formulado explícitamente: *"Todo problema que admite una solución iterativa admite también una solución recursiva, y viceversa"*. Es la misma idea que "recursión vs. iteración" más abajo, pero como garantía general: la elección entre ambas es una decisión de diseño, no una limitación del problema.
+
+## Ventajas y desventajas
+- **Ventajas**: elegancia y simplicidad — el código puede reflejar directamente la definición matemática o conceptual del problema (ver factorial, Fibonacci).
+- **Desventajas**: lentitud y mayor consumo de memoria frente a la versión iterativa equivalente (cada llamada activa un nuevo marco en la pila).
+
+## Recomendaciones prácticas
+- El caso base **nunca** debe verificarse con `while` o `for` — mezclar recursión con iteración explícita para controlar la salida contradice la lógica recursiva.
+- Las variables locales de una llamada recursiva tienen alcance acotado a esa llamada; para comunicar valores entre llamadas hay que usar **parámetros adicionales** (con valor por omisión) o el **valor de retorno**, no variables compartidas.
+
+## Recursividad sobre listas
+Cualquier recorrido iterativo de una [[conceptos/listas-python|lista]] puede reescribirse recursivamente, típicamente de dos formas: con un parámetro adicional que actúa de índice, o consumiendo la lista con slicing en cada llamada.
+
+```python
+# Versión 1: índice explícito con valor por omisión
+def imprimirlista(lista, inicio=0):
+    if inicio < len(lista):
+        print(lista[inicio], end=" ")
+        imprimirlista(lista, inicio + 1)
+
+# Versión 2: un solo parámetro, consumiendo la lista con slicing
+def imprimirlista(lista):
+    if len(lista) > 0:
+        print(lista[0], end=" ")
+        imprimirlista(lista[1:])
+```
+
+El mismo patrón aplica para agregación (buscar el máximo): cada llamada resuelve "el máximo del resto de la lista" y lo compara con su propio elemento:
+
+```python
+def buscarmayor(lista):
+    if len(lista) > 1:
+        actual = lista[0]
+        mayor = buscarmayor(lista[1:])
+        return actual if actual > mayor else mayor
+    else:
+        return lista[0]
+```
+
+La versión con slicing es más legible pero crea una copia parcial de la lista en cada llamada (costo adicional de memoria); la versión con índice es más eficiente para listas grandes.
+
 ## Recursión vs. iteración
 - Si un problema se puede resolver con igual facilidad de ambas formas, la solución **iterativa es preferible**: se ejecuta más rápido y usa menos memoria (no acumula llamadas en la pila).
 - La recursión es preferible cuando simplifica notablemente la solución o el problema es naturalmente recursivo (p. ej. recorridos de árboles, algoritmos de "divide y vencerás").
@@ -83,7 +128,9 @@ Ejemplo que combina recursividad con [[conceptos/graficos-de-tortuga|gráficos d
 
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
 - [[fuentes/introduccion-a-la-programacion-con-python-3]]
+- [[fuentes/programacion1-recursividad-thompson]]
 - [[conceptos/funciones-programacion]]
+- [[conceptos/listas-python]]
 - [[conceptos/estructura-iterativa]]
 - [[conceptos/algoritmo]]
 - [[conceptos/pilas-y-colas]]

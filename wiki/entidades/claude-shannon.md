@@ -2,9 +2,9 @@
 titulo: "Claude Shannon"
 tipo: entidad
 creado: 2026-07-24
-actualizado: 2026-07-24
+actualizado: 2026-09-15
 tags: [persona, teoria-de-la-informacion, matematica, historia-de-la-ciencia]
-fuentes: [teoria-sistemas-clase4-uade]
+fuentes: [teoria-sistemas-clase4-uade, arquitectura-computadoras-clase5-uade]
 ---
 
 # Claude Elwood Shannon
@@ -17,6 +17,8 @@ Su teoría se centra en investigar y medir la información, y en valorar los sis
 - **Compresión de datos**: algoritmos como el de Huffman usan la entropía para comprimir datos sin pérdida de información.
 - **Codificación de canales**: códigos de corrección de errores (Reed-Solomon, convolucionales) para transmitir información por canales con ruido.
 - **Criptografía**: diseño de algoritmos de cifrado basados en conceptos de confusión y difusión.
+
+Además, en **1938** aplicó el álgebra de [[entidades/george-boole|Boole]] al análisis de circuitos electrónicos, fundando el diseño lógico del hardware digital — ver [[conceptos/compuertas-logicas]] ([[fuentes/arquitectura-computadoras-clase5-uade]]).
 
 Según Bertalanffy, la teoría de la información de Shannon y Weaver es una de las teorías emparentadas con la [[conceptos/teoria-general-de-sistemas]], junto con la [[conceptos/teoria-de-juegos|teoría de juegos]] de [[entidades/john-von-neumann|Von Neumann]] y la [[conceptos/cibernetica|cibernética]] de [[entidades/norbert-wiener|Wiener]].
 

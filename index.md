@@ -50,6 +50,33 @@
 - [[fuentes/transformaciones-lineales-uade]] — Clase 5: transformaciones lineales, núcleo, imagen, teorema de la dimensión (2026-08-03)
 - [[fuentes/autovalores-autovectores-diagonalizacion-uade]] — Clase 6: autovalores, autovectores, polinomio característico, diagonalización (2026-08-03)
 - [[fuentes/matriz-cambio-base-uade]] — Clase 7: matriz de una transformación lineal en bases B,B' y cambio de base (2026-08-03)
+- [[fuentes/arquitectura-computadoras-clase1-uade]] — Clase 1: hardware propio, electricidad básica (Ohm/Potencia/Joule), IA en la cursada (2026-08-19)
+- [[fuentes/arquitectura-computadoras-clase2-uade]] — Clase 2: semiconductores, Ley de Moore, historia del hardware, CPU y arquitectura de Von Neumann (2026-08-19)
+- [[fuentes/arquitectura-computadoras-clase3-uade]] — Clase 3: repaso de arquitecturas y sistemas de numeración (2026-08-19)
+- [[fuentes/arquitectura-computadoras-clase4-uade]] — Clase 4: sistemas de representación (BSS/MyS/Ca1/Ca2/exceso), flags, IEEE 754, ASCII/Unicode (2026-09-15)
+- [[fuentes/arquitectura-computadoras-clase4-notas-uade]] — Clase 4 (notas de clase 2026-08-25): polisemia del binario, ALU solo suma, regla de signos para overflow (2026-09-15)
+- [[fuentes/arquitectura-computadoras-clase4-apunte-uade]] — Clase 4 (apunte organizado): erratas corregidas de conversiones y complementos, aritmético vs. procesador (2026-10-24)
+- [[fuentes/arquitectura-computadoras-clase5-apunte-uade]] — Clase 5 (apunte organizado): erratas corregidas, ejercicio de cancelación de flags, direccionamiento, logística del TPO RISC vs. CISC (2026-10-24)
+- [[fuentes/arquitectura-computadoras-clase5-uade]] — Clase 5: ciclo de instrucción moderno, pipelining, CISC vs RISC, x86 vs ARM, compuertas lógicas (2026-09-15)
+- [[fuentes/arquitectura-computadoras-clase5-notas-uade]] — Clase 5 (notas de clase 2026-09-01): caché (hit/miss/dirty bit), branch prediction, regla 80/20, núcleos híbridos, modelo ARM (2026-09-15)
+- [[fuentes/arquitectura-computadoras-clase6-apunte-uade]] — Clase 6 (apunte organizado): erratas XOR/XNOR, tabla del sumador completo con Cout, mapeo F0/F1, logística del TP y debate (2026-10-24)
+- [[fuentes/arquitectura-computadoras-clase6-uade]] — Clase 6: álgebra de Boole, compuertas, circuitos combinacionales/secuenciales, ALU de 1 bit (2026-09-15)
+- [[fuentes/arquitectura-computadoras-clase6-notas-uade]] — Clase 6 (notas de clase 2026-09-08): realimentación/flip-flops, equivalencia de circuitos, opcode/decodificador/enable de la ALU (2026-09-15)
+- [[fuentes/arquitectura-computadoras-clase7-apunte-uade]] — Clase 7: tipos de procesadores, caché, fabricación de chips, fichas técnicas, revisión del parcial y TP de data center (2026-10-24)
+- [[fuentes/arquitectura-computadoras-clase8-apunte-uade]] — Clase 8: memorias internas (ROM, SRAM/DRAM, DDR, Dual Channel, endianness, VRAM, memoria virtual) y TP N°2 de data center (2026-10-24)
+- [[fuentes/arquitectura-computadoras-clase9-apuntes-uade]] — Clase 9 (2026-10-13): USB/Thunderbolt, PCIe, HDD/SSD, cintas LTO, RAID, NAS/SAN, reglas del TP y del oral (2026-10-24)
+- [[fuentes/programacion1-introduccion-thompson]] — Clase 1: intro a Python, compilación/interpretación, variables, condicional/iterativa, match-case (2026-09-09)
+- [[fuentes/programacion1-funciones-thompson]] — Clase 2: funciones, docstrings, retorno múltiple, parámetros por omisión/nombre, lambda (2026-09-09)
+- [[fuentes/programacion1-listas1-thompson]] — Clase 3: listas — métodos, sort/sorted con key, módulo random (2026-09-09)
+- [[fuentes/programacion1-listas2-thompson]] — Clase 4: slicing avanzado, copia de listas, enumerate, map/filter, comprensión, matrices (2026-09-09)
+- [[fuentes/programacion1-cadenas1-thompson]] — Clase 5: cadenas — UTF-8, %s, comparación, copia por referencia (2026-09-09)
+- [[fuentes/programacion1-cadenas2-thompson]] — Clase 6: métodos is*/strip/find, f-strings en profundidad (2026-09-09)
+- [[fuentes/programacion1-expresiones-regulares-thompson]] — Clase 6b: expresiones regulares, módulo re (2026-09-09)
+- [[fuentes/programacion1-tuplas-conjuntos-diccionarios-thompson]] — Clase 7: tuplas, conjuntos, diccionarios (2026-09-09)
+- [[fuentes/programacion1-excepciones-thompson]] — Clase 8: manejo de excepciones try/except/else/finally/raise/assert (2026-09-09)
+- [[fuentes/programacion1-archivos-thompson]] — Clase 9: archivos de texto, apertura/lectura/escritura/cierre (2026-09-09)
+- [[fuentes/programacion1-json-thompson]] — Clase 9b: JSON, módulo json, JSON Lines (2026-09-09)
+- [[fuentes/programacion1-recursividad-thompson]] — Clase 10: recursividad, factorial, Fibonacci, listas, Torres de Hanoi (2026-09-09)
 
 ## Entidades
 - [[entidades/obsidian]] — Editor de notas markdown con enlaces bidireccionales
@@ -71,6 +98,16 @@
 - [[entidades/claude-shannon]] — Padre de la teoría de la información
 - [[entidades/rodrigo-ferrare]] — Docente de Teoría de Sistemas en UADE
 - [[entidades/virginia-bravo-barletta]] — Docente de Álgebra Lineal en UADE (transformaciones lineales en adelante)
+- [[entidades/thomas-edison]] — Impulsor histórico de la corriente continua (CC)
+- [[entidades/nikola-tesla]] — Impulsor histórico de la corriente alterna (CA) y su transporte
+- [[entidades/gordon-moore]] — Cofundador de Intel, formuló la Ley de Moore
+- [[entidades/intel]] — Fabricante x86: líneas Core/Xeon/Atom, núcleos híbridos, caché dinámica, Intel 4004
+- [[entidades/amd]] — Fabricante x86: Ryzen/EPYC, chiplets, 3D V-Cache, núcleos uniformes
+- [[entidades/nvidia]] — Placas de video (GPU) y giro hacia IA; RTX 5090 / Blackwell
+- [[entidades/tsmc]] — Fundición taiwanesa de los chips más avanzados; punto crítico geopolítico
+- [[entidades/ricardo-thompson]] — Docente de "Algoritmos y Estructuras de Datos I / Programación I" (Python)
+- [[entidades/george-boole]] — Creador del álgebra de Boole (1854), base matemática de los circuitos digitales
+- [[entidades/arm]] — Advanced RISC Machine: ISA RISC dominante en móviles y diseño licenciado de procesadores
 
 ## Conceptos
 - [[conceptos/retrieval-augmented-generation]] — Arquitectura que combina LLMs con recuperación de documentos externos
@@ -203,6 +240,46 @@
 - [[conceptos/autovalores-autovectores]] — A·v=λ·v; polinomio característico, espectro, autoespacio
 - [[conceptos/diagonalizacion]] — P⁻¹AP=D; condición de diagonalizabilidad
 - [[conceptos/matriz-cambio-base]] — M(T)_BB'; caso particular de la transformación identidad
+- [[conceptos/electricidad-basica]] — Voltaje, corriente, resistencia, potencia; Ley de Ohm/Potencia/Joule; CC vs CA
+- [[conceptos/semiconductores-y-transistores]] — Conductores/aislantes/semiconductores, diodo, transistor, rectificación
+- [[conceptos/ley-de-moore]] — Duplicación de transistores cada ~2 años; evolución por CPU; debate de vigencia
+- [[conceptos/historia-de-la-computacion]] — ENIAC a la PC personal; Intel/Microsoft/Apple/AMD; x86 vs ARM
+- [[conceptos/sistemas-de-numeracion]] — Bases, conversiones, aritmética binaria, fracciones, unidades bit/nibble/byte
+- [[conceptos/componentes-de-la-cpu]] — UC, ALU, registros, jerarquía de caché, reloj/PLL, núcleos
+- [[conceptos/buses-de-sistema]] — Bus de datos/direcciones/control, chipset, buses internos vs externos
+- [[conceptos/arquitectura-harvard]] — Memorias/buses separados; contraste con Von Neumann; uso en sistemas embebidos
+- [[conceptos/interrupciones]] — Hardware/software/internas; ciclo de interrupción, IRQ, vector, pila
+- [[conceptos/expresiones-regulares]] — Módulo `re`: search/findall/sub, metacaracteres, cuantificadores
+- [[conceptos/tuplas-python]] — Secuencia inmutable; empaquetado/desempaquetado, intercambio de variables
+- [[conceptos/manejo-de-excepciones]] — try/except/else/finally, raise, assert
+- [[conceptos/json]] — Módulo json: dumps/dump/loads/load, JSON Lines
+- [[conceptos/representacion-numeros-enteros]] — BSS, MyS, Ca1, Ca2 y exceso: mecanismos, rangos y BCD
+- [[conceptos/flags-del-procesador]] — Flags Z/N/C/V: C ↔ BSS, V ↔ Ca2, regla de signos, overflows célebres
+- [[conceptos/punto-flotante-ieee754]] — IEEE 754: float/double, signo-exponente(exceso)-mantisa
+- [[conceptos/pipelining-y-superescalaridad]] — Segmentación de cauce, conflictos, branch prediction, superescalar, multithread/multicore
+- [[conceptos/cisc-y-risc]] — ISA; CISC vs RISC, x86 vs x64, x86 vs ARM, núcleos híbridos
+- [[conceptos/compuertas-logicas]] — Álgebra de Boole, las 7 compuertas, circuitos combinacionales vs secuenciales, simplificación
+- [[conceptos/alu-de-1-bit]] — Semi-sumador, full adder, sumador de 8 bits y ALU de 1 bit con multiplexor
+- [[conceptos/tipos-de-procesadores]] — CPU, GPU, NPU, TPU, DPU, SoC; x86 vs. ARM; taxonomía de Flynn (MIMD vs. SIMD)
+- [[conceptos/localidad-y-cache-de-procesadores]] — Del GHz al multinúcleo, localidad temporal/espacial, prefetch, caché dinámica de Intel vs. 3D V-Cache de AMD
+- [[conceptos/computacion-cuantica]] — Qubits, riesgos para el cifrado y precisiones a verificar
+- [[conceptos/fabricacion-de-microprocesadores]] — Silicio, oblea, fotolitografía, salas limpias, encapsulado
+- [[conceptos/geopolitica-de-semiconductores]] — Costos de las fábricas, ASML/EUV, Taiwán y TSMC, política industrial de EE. UU.
+- [[conceptos/especificaciones-de-procesadores]] — Cómo leer una ficha técnica: binning, turbo vs. base, núcleos híbridos, potencia, memoria, socket
+- [[conceptos/jerarquia-y-clasificacion-de-memorias]] — Interna/externa, volátil, métodos de acceso, métricas y pirámide de memoria
+- [[conceptos/rom-y-bios]] — BIOS y la familia ROM → PROM → EPROM → EEPROM (UEFI/flash)
+- [[conceptos/sram-y-dram]] — Transistores vs. transistor + capacitor, refresco, SIMM/DIMM, memorias sincrónicas
+- [[conceptos/ddr-y-rendimiento-de-ram]] — DDR1 a DDR5, MT/s, ancho de banda, latencia CAS, prefetch, overclocking
+- [[conceptos/dual-channel-y-fichas-de-memoria]] — Canales, kits, XMP/EXPO, ECC, números de parte, servidores e instalación
+- [[conceptos/endianness]] — Big vs. Little Endian; x86 vs. ARM
+- [[conceptos/gpu-y-vram]] — RAM vs. VRAM, Blackwell, TOPS, TCL, ancho de banda frente a latencia
+- [[conceptos/memoria-virtual]] — Paginación: el disco como extensión de la RAM; memoria en celulares
+- [[conceptos/usb-y-thunderbolt]] — USB 1.0 a USB4, Thunderbolt como extensión externa de PCIe, USB4 vs. Thunderbolt 4/5
+- [[conceptos/pci-express]] — Generación × carriles, techo de rendimiento, E/S moderna en Intel, AMD y Apple Silicon
+- [[conceptos/discos-hdd-y-ssd]] — HDD (cabezales, fragmentación, bloques), SSD NAND, SATA/SAS/NVMe, formato M.2
+- [[conceptos/cintas-lto-y-medios-de-archivo]] — Medios ópticos y portátiles, cinta LTO, WORM, librerías robóticas
+- [[conceptos/raid]] — Niveles 0, 1, 5, 6, 10, 50/60, capacidad útil, controladora y criticidad
+- [[conceptos/nas-san-y-redes-de-almacenamiento]] — NAS (TCP/IP) vs. SAN (Fibre Channel/HBA), switch y diagrama de red
 
 ## Análisis
 - [[analisis/estructura-curso-algebra-geometria-uade]] — Síntesis y mapa del curso de Álgebra y Geometría (UADE)
@@ -212,3 +289,8 @@
 - [[analisis/estructura-libro-marzal-python3]] — Mapa completo del libro Marzal et al. (4 bloques) y contraste con Joyanes y el curso UADE
 - [[analisis/estructura-curso-teoria-sistemas-uade]] — Síntesis y mapa del curso de Teoría de Sistemas (UADE): de la TGS al pensamiento sistémico
 - [[analisis/estructura-curso-algebra-lineal-uade]] — Síntesis y mapa del bloque de Álgebra Lineal (UADE): matrices → espacios vectoriales → transformaciones lineales
+- [[analisis/tp-data-center-arquitectura-computadoras]] — Síntesis del TP de data center (Clases 7-9): consigna, entregables, criterios de compatibilidad, reglas del oral y evaluación
+- [[analisis/estructura-curso-arquitectura-computadoras-uade]] — Síntesis del curso de Arquitectura de Computadoras (UADE): electricidad → semiconductores → Von Neumann → sistemas de numeración
+- [[analisis/estructura-curso-programacion1-thompson]] — Síntesis del curso Programación I (Lic. Ricardo Thompson): 12 clases, Python, de variables a recursividad
+- [[analisis/guia-estudio-parcial-arquitectura-computadoras]] — Guía de estudio autocontenida para el primer parcial de Arquitectura de Computadoras (clases 1-6): teoría completa + 19 ejercicios resueltos y consejos del examen (actualizada 2026-10-24)
+- [[analisis/guia-estudio-parcial-programacion1-thompson]] — Guía de estudio autocontenida para el parcial de Programación I (clases 1-6, hasta Cadenas 2ª parte): teoría completa + 14 ejercicios resueltos

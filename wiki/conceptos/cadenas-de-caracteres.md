@@ -2,9 +2,9 @@
 titulo: "Cadenas de Caracteres (Strings)"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-07-01
+actualizado: 2026-09-09
 tags: [cadenas, strings, python]
-fuentes: [cadenas-caracteres-mm, joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
+fuentes: [cadenas-caracteres-mm, joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3, programacion1-cadenas1-thompson, programacion1-cadenas2-thompson]
 ---
 
 # Cadenas de Caracteres (Strings)
@@ -15,6 +15,8 @@ Una cadena (`string`, tipo `str`) es una **secuencia de caracteres**. En Python 
 cad1 = "Lunes"
 cad2 = 'Martes'
 ```
+
+Python 3 usa codificación **UTF-8**, que admite caracteres regionales (`ñ`, vocales acentuadas) sin configuración adicional — a diferencia de Python 2, que usaba ASCII por defecto. Usar comillas distintas a las de apertura permite incluir el otro tipo sin escapar (`"Mc. Donald's"`); una cadena larga puede partirse en varias líneas de código con `\` al final de cada línea (sin que eso inserte un salto de línea en el resultado), a diferencia de las cadenas multilínea con `'''`/`"""` (que sí conservan los saltos de línea reales).
 
 ## Operadores
 
@@ -44,10 +46,30 @@ Una cadena es **iterable**: se puede recorrer carácter por carácter con `for l
 | `.center(ancho, relleno)` | Centra rellenando con un carácter |
 | `.ljust(ancho, relleno)` / `.rjust(ancho, relleno)` | Justifica a izquierda/derecha |
 | `.zfill(ancho)` | Rellena con ceros a la izquierda (`"3".zfill(5)` → `"00003"`) |
+| `.lstrip([cad])` / `.rstrip([cad])` / `.strip([cad])` | Elimina los caracteres de `cad` (por defecto, espacios) al comienzo / al final / en ambos extremos |
+| `.find(cad, ini, fin)` / `.rfind(...)` | Como `.index()`, pero devuelve `-1` en vez de lanzar error si no encuentra la subcadena (`rfind` busca desde el final) |
 
 ## f-string (formato de cadenas)
+Introducidas en Python 3.6 (2016), simplifican el formateo frente al operador `%` o `.format()`: una cadena precedida por `f` inserta el valor de cualquier variable, expresión o llamada a función/método escrita entre llaves (**marcador de posición**):
+
 ```python
-print(f"Legajo:{legajo} Nombre:{nombre} Nota:{nota}")
+dia, mes = 16, "Enero"
+print(f"Sucedió el {dia} de {mes}.")   # Sucedió el 16 de Enero.
+print(f"{2 * 37}")                      # 74 (expresión)
+print(f"{mes.lower()}")                 # enero (método)
+```
+
+El formato de cada marcador admite las mismas opciones que `.format()` (ancho, alineación, relleno, decimales), escritas tras `:`:
+
+```python
+num, pal = 15, "Hola"
+f"*{num:5}*"      # *   15*   ancho 5, alinea números a la derecha por defecto
+f"*{num:05}*"     # *00015*   0 delante del ancho rellena con ceros
+f"*{num:<8}*"     # *15      *  forzar alineación a la izquierda
+f"*{pal:>8}*"     # *    Hola*  forzar alineación a la derecha (cadenas se alinean a la izquierda por defecto)
+f"*{pal:^8}*"     # *  Hola  *  centrado
+f"*{pal:=^8}*"    # *==Hola==*  carácter de relleno personalizado antes del símbolo de alineación
+f"{3.1416:8.2f}"  # "    3.14"  ancho 8, 2 decimales, tipo f (punto fijo)
 ```
 
 ## Sintaxis reducida relacionada
@@ -80,6 +102,9 @@ A diferencia de Python (donde los strings son **inmutables** y estas operaciones
 ### Representación interna
 En C/C++, una cadena es internamente un **array de caracteres** terminado en el carácter nulo `'\0'` — ver [[conceptos/arrays-vectores-matrices]]. Otras representaciones clásicas: longitud fija (relleno con blancos), longitud variable con máximo (puntero + longitud actual), o longitud indefinida (lista enlazada de caracteres). Python abstrae completamente esta representación: el tipo `str` se gestiona internamente sin que el programador deba pensar en arrays ni en terminadores.
 
+## Copia de cadenas: siempre es una referencia
+A diferencia de las listas (donde hay que elegir una técnica específica para lograr una copia independiente), copiar una cadena **siempre** copia solo la referencia, sin importar la técnica: `b = a`, `c = a[:]`, `d = str(a)` y `e = a + ""` producen todas el mismo `id()` que `a`. Esto es consistente y no representa un riesgo (a diferencia del aliasing en listas) porque las cadenas son **inmutables**: no existe una operación que module el contenido de la cadena original a través de una de esas referencias, así que Python evita crear copias idénticas innecesarias en memoria. También carecen de método `reverse()` (no aplicable a un tipo inmutable); para invertir una cadena se usa la misma técnica de rebanada que en listas: `original[::-1]`.
+
 ## Cadena vs. identificador
 Error común al empezar a programar: confundir una cadena con el nombre de una variable. `a = 1` crea una variable; `'a'` es una cadena de un carácter que no tiene relación alguna con la variable `a`. Olvidar las comillas de una cadena provoca que Python la interprete como un identificador (y falle con `NameError` si no existe); poner comillas de más alrededor de un nombre de variable hace que Python la trate como texto literal en vez de evaluarla ([[fuentes/introduccion-a-la-programacion-con-python-3]]).
 
@@ -97,6 +122,9 @@ La barra invertida `\` es el **carácter de escape**: indica que el carácter si
 - [[fuentes/cadenas-caracteres-mm]]
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
 - [[fuentes/introduccion-a-la-programacion-con-python-3]]
+- [[fuentes/programacion1-cadenas1-thompson]]
+- [[fuentes/programacion1-cadenas2-thompson]]
 - [[entidades/python]]
 - [[conceptos/representacion-de-la-informacion]]
 - [[conceptos/arrays-vectores-matrices]]
+- [[conceptos/expresiones-regulares]]
