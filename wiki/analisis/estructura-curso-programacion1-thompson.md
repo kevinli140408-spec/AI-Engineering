@@ -2,7 +2,7 @@
 titulo: "Estructura del curso Programación I (Lic. Ricardo Thompson)"
 tipo: analisis
 creado: 2026-09-09
-actualizado: 2026-09-09
+actualizado: 2026-10-24
 tags: [python, programacion, sintesis-de-curso]
 fuentes: [programacion1-introduccion-thompson, programacion1-funciones-thompson, programacion1-listas1-thompson, programacion1-listas2-thompson, programacion1-cadenas1-thompson, programacion1-cadenas2-thompson, programacion1-expresiones-regulares-thompson, programacion1-tuplas-conjuntos-diccionarios-thompson, programacion1-excepciones-thompson, programacion1-archivos-thompson, programacion1-json-thompson, programacion1-recursividad-thompson]
 ---
@@ -22,6 +22,8 @@ Síntesis de las 12 clases de la materia "Algoritmos y Estructuras de Datos I / 
 8. **Excepciones** ([[fuentes/programacion1-excepciones-thompson]]): `try`/`except`/`else`/`finally`, `raise`, `assert`.
 9-9b. **Archivos y JSON** ([[fuentes/programacion1-archivos-thompson]], [[fuentes/programacion1-json-thompson]]): apertura/lectura/escritura/cierre con manejo de excepciones estricto; serialización.
 10. **Recursividad** ([[fuentes/programacion1-recursividad-thompson]]): factorial, Fibonacci, listas, Torres de Hanoi — cierre del curso.
+
+**Para el parcial** (clases 1-6, sin expresiones regulares): ver la guía autocontenida [[analisis/guia-estudio-parcial-programacion1-thompson]].
 
 ## Relación con el resto de la wiki
 Este curso solapa en gran medida con el contenido ya presente a partir de la cátedra de Algoritmia (UADE, prefijo `-mm`) y el libro de Marzal, Gracia y García ([[fuentes/introduccion-a-la-programacion-con-python-3]]): mismos temas de fondo (variables, control de flujo, funciones, listas, recursividad). La ingesta se resolvió **actualizando las páginas de concepto existentes** en la mayoría de los casos, en vez de duplicar contenido, agregando el detalle sintáctico específico de esta cátedra que no estaba cubierto:

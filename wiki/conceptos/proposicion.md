@@ -2,8 +2,8 @@
 titulo: "Proposición"
 tipo: concepto
 creado: 2026-06-29
-actualizado: 2026-06-29
-tags: [logica, proposicion]
+actualizado: 2026-10-24
+tags: [logica, proposiciones]
 fuentes: [logica-mm, simbolizacion-proposiciones-mm, tablas-de-verdad-mm]
 ---
 

@@ -2,8 +2,8 @@
 titulo: "Grafo de Conocimiento (Knowledge Graph)"
 tipo: concepto
 creado: 2026-06-29
-actualizado: 2026-06-29
-tags: [knowledge-graph, grafo, entidades, relaciones, rag]
+actualizado: 2026-10-24
+tags: [knowledge-graph, grafos, entidades, relaciones, rag]
 fuentes: []
 ---
 

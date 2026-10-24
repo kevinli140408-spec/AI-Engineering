@@ -3,7 +3,7 @@ titulo: "NAS, SAN y Redes de Almacenamiento"
 tipo: concepto
 creado: 2026-10-24
 actualizado: 2026-10-24
-tags: [almacenamiento, nas, san, switch, red, data-center, fibre-channel]
+tags: [almacenamiento, nas, san, switch, redes, data-center, fibre-channel]
 fuentes: [arquitectura-computadoras-clase9-apuntes-uade]
 ---
 

@@ -2,8 +2,8 @@
 titulo: "Organización de una Computadora"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-08-19
-tags: [hardware, arquitectura-von-neumann, memoria, procesador]
+actualizado: 2026-10-24
+tags: [hardware, arquitectura-von-neumann, memoria, procesadores]
 fuentes: [joyanes-aguilar-fundamentos-de-programacion, arquitectura-computadoras-clase2-uade]
 ---
 

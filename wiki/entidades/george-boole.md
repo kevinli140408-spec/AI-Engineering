@@ -2,8 +2,8 @@
 titulo: "George Boole"
 tipo: entidad
 creado: 2026-09-15
-actualizado: 2026-09-15
-tags: [personas, logica, algebra-de-boole]
+actualizado: 2026-10-24
+tags: [persona, logica, algebra-de-boole]
 fuentes: [arquitectura-computadoras-clase5-uade]
 ---
 

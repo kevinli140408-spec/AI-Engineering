@@ -2,14 +2,14 @@
 titulo: "Estructura del Curso de Arquitectura de Computadoras (UADE)"
 tipo: analisis
 creado: 2026-08-19
-actualizado: 2026-09-15
+actualizado: 2026-10-24
 tags: [hardware, uade, arquitectura-von-neumann, sistemas-de-numeracion, representacion, alu]
-fuentes: [arquitectura-computadoras-clase1-uade, arquitectura-computadoras-clase2-uade, arquitectura-computadoras-clase3-uade, arquitectura-computadoras-clase4-uade, arquitectura-computadoras-clase5-uade, arquitectura-computadoras-clase6-uade]
+fuentes: [arquitectura-computadoras-clase1-uade, arquitectura-computadoras-clase2-uade, arquitectura-computadoras-clase3-uade, arquitectura-computadoras-clase4-uade, arquitectura-computadoras-clase5-uade, arquitectura-computadoras-clase6-uade, arquitectura-computadoras-clase7-apunte-uade, arquitectura-computadoras-clase8-apunte-uade, arquitectura-computadoras-clase9-apuntes-uade]
 ---
 
 # Estructura del Curso de Arquitectura de Computadoras (UADE)
 
-Síntesis de las clases 1-6 del curso **Arquitectura de Computadoras** de [[entidades/uade]] (2026), que construye el conocimiento de hardware "de abajo hacia arriba": primero la física de la electricidad, luego los componentes de silicio, luego la arquitectura lógica que los organiza, hasta llegar a la construcción de la ALU desde compuertas. Las clases 1-6 cierran la primera parte de la materia (primer parcial).
+Síntesis de las clases 1-6 del curso **Arquitectura de Computadoras** de [[entidades/uade]] (2026), que construye el conocimiento de hardware "de abajo hacia arriba": primero la física de la electricidad, luego los componentes de silicio, luego la arquitectura lógica que los organiza, hasta llegar a la construcción de la ALU desde compuertas. Las clases 1-6 cierran la primera parte de la materia (primer parcial); las clases 7-9 abren la segunda, centrada en hardware actual y en el TP de data center.
 
 ## Mapa del curso
 
@@ -21,6 +21,12 @@ Síntesis de las clases 1-6 del curso **Arquitectura de Computadoras** de [[enti
 6. **Clase 6 — Álgebra de Boole y ALU de 1 bit** ([[fuentes/arquitectura-computadoras-clase6-uade]] + [[fuentes/arquitectura-computadoras-clase6-notas-uade|notas]]): compuertas, circuitos combinacionales/secuenciales y construcción de la [[conceptos/alu-de-1-bit|ALU]] (semi-sumador → full adder → sumador de 8 bits → ALU con multiplexor).
 
 **Hilo conductor de las clases 4-6**: la ALU solo sabe sumar y operar lógicamente; los sistemas de representación (Ca2, exceso), los flags y las compuertas son las tres piezas que convierten la aritmética en lógica ejecutable por transistores.
+
+**Segunda parte (clases 7-9)**: después del primer parcial el curso pasa del bit al hardware real. Los temas se organizan alrededor del TP de data center ([[analisis/tp-data-center-arquitectura-computadoras]]), donde el criterio central es la compatibilidad entre componentes.
+
+7. **Clase 7 — Procesadores modernos** ([[fuentes/arquitectura-computadoras-clase7-apunte-uade]]): [[conceptos/tipos-de-procesadores|CPU, GPU, NPU, TPU, SoC]], [[conceptos/localidad-y-cache-de-procesadores|localidad y caché]], [[conceptos/fabricacion-de-microprocesadores|fabricación]], [[conceptos/geopolitica-de-semiconductores|geopolítica de semiconductores]], [[conceptos/especificaciones-de-procesadores|fichas técnicas]] y [[conceptos/computacion-cuantica|computación cuántica]]. Incluye la revisión del primer parcial.
+8. **Clase 8 — Memorias internas** ([[fuentes/arquitectura-computadoras-clase8-apunte-uade]]): [[conceptos/jerarquia-y-clasificacion-de-memorias|jerarquía de memorias]], [[conceptos/sram-y-dram|SRAM y DRAM]], [[conceptos/ddr-y-rendimiento-de-ram|DDR]], [[conceptos/dual-channel-y-fichas-de-memoria|Dual Channel]], [[conceptos/rom-y-bios|ROM y BIOS]], [[conceptos/memoria-virtual|memoria virtual]], [[conceptos/endianness|endianness]] y [[conceptos/gpu-y-vram|GPU y VRAM]].
+9. **Clase 9 — Almacenamiento y compatibilidad** ([[fuentes/arquitectura-computadoras-clase9-apuntes-uade]]): [[conceptos/discos-hdd-y-ssd|HDD y SSD]], [[conceptos/raid|RAID]], [[conceptos/nas-san-y-redes-de-almacenamiento|NAS y SAN]], [[conceptos/cintas-lto-y-medios-de-archivo|cintas LTO]], [[conceptos/pci-express|PCI Express]] y [[conceptos/usb-y-thunderbolt|USB y Thunderbolt]].
 
 ## Relación con el curso de Fundamentos de Informática (Joyanes Aguilar)
 
@@ -34,6 +40,8 @@ Este curso **profundiza y no contradice** el capítulo 1 de [[fuentes/joyanes-ag
 No se detectaron contradicciones factuales entre ambos cursos.
 
 ## Para repasar antes de un parcial
+
+Guía completa y autocontenida del primer parcial: [[analisis/guia-estudio-parcial-arquitectura-computadoras]]. Resumen rápido:
 
 - **Fórmulas físicas**: `V=I×R`, `P=V×I=I²×R`, `Q=P×t`.
 - **Fórmula de memoria**: `Tamaño = Longitud de Palabra × Cantidad de Direcciones`; direcciones posibles con n bits = `2ⁿ`.
@@ -49,5 +57,8 @@ No se detectaron contradicciones factuales entre ambos cursos.
 - [[fuentes/arquitectura-computadoras-clase1-uade]]
 - [[fuentes/arquitectura-computadoras-clase2-uade]]
 - [[fuentes/arquitectura-computadoras-clase3-uade]]
+- [[fuentes/arquitectura-computadoras-clase7-apunte-uade]]
+- [[fuentes/arquitectura-computadoras-clase8-apunte-uade]]
+- [[fuentes/arquitectura-computadoras-clase9-apuntes-uade]]
 - [[fuentes/joyanes-aguilar-fundamentos-de-programacion]]
 - [[entidades/uade]]

@@ -290,7 +290,7 @@
 - [[analisis/estructura-curso-teoria-sistemas-uade]] — Síntesis y mapa del curso de Teoría de Sistemas (UADE): de la TGS al pensamiento sistémico
 - [[analisis/estructura-curso-algebra-lineal-uade]] — Síntesis y mapa del bloque de Álgebra Lineal (UADE): matrices → espacios vectoriales → transformaciones lineales
 - [[analisis/tp-data-center-arquitectura-computadoras]] — Síntesis del TP de data center (Clases 7-9): consigna, entregables, criterios de compatibilidad, reglas del oral y evaluación
-- [[analisis/estructura-curso-arquitectura-computadoras-uade]] — Síntesis del curso de Arquitectura de Computadoras (UADE): electricidad → semiconductores → Von Neumann → sistemas de numeración
+- [[analisis/estructura-curso-arquitectura-computadoras-uade]] — Síntesis del curso de Arquitectura de Computadoras (UADE): electricidad → semiconductores → Von Neumann → sistemas de numeración → ALU (clases 1-6); procesadores, memorias y almacenamiento (clases 7-9)
 - [[analisis/estructura-curso-programacion1-thompson]] — Síntesis del curso Programación I (Lic. Ricardo Thompson): 12 clases, Python, de variables a recursividad
 - [[analisis/guia-estudio-parcial-arquitectura-computadoras]] — Guía de estudio autocontenida para el primer parcial de Arquitectura de Computadoras (clases 1-6): teoría completa + 19 ejercicios resueltos y consejos del examen (actualizada 2026-10-24)
 - [[analisis/guia-estudio-parcial-programacion1-thompson]] — Guía de estudio autocontenida para el parcial de Programación I (clases 1-6, hasta Cadenas 2ª parte): teoría completa + 14 ejercicios resueltos

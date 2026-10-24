@@ -2,8 +2,8 @@
 titulo: "Algoritmo"
 tipo: concepto
 creado: 2026-06-30
-actualizado: 2026-07-01
-tags: [algoritmo, pseudocodigo, diagramas-de-flujo]
+actualizado: 2026-10-24
+tags: [algoritmos, pseudocodigo, diagramas-de-flujo]
 fuentes: [pensamiento-computacional-mm, guia-estudio-algoritmia-mm, joyanes-aguilar-fundamentos-de-programacion, introduccion-a-la-programacion-con-python-3]
 ---
 
